@@ -2,121 +2,191 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IBM Cork CoderDojo</title>
-    <link rel="stylesheet" href="/globals.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
-        integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/scripts/hljs/github-dark-dimmed.min.css">
-    <script src="/scripts/hljs/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cork Airport CoderDojo</title>
+  <link rel="stylesheet" href="/globals.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+    integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/scripts/hljs/github-dark-dimmed.min.css" />
+  <script src="/scripts/hljs/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll()
+  </script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="/" class="dojo-logo">
-                <img src="/assets/coderdojo_round_logo.svg" alt="" srcset="">
-                CoderDojo @ IBM Cork
-            </a>
+  <header>
+    <nav>
+      <a href="/" class="dojo-logo">
+        <img src="/assets/coderdojo_round_logo.svg" alt="" srcset="" />
+        Cork Airport CoderDojo
+      </a>
 
-            <ul>
-                <a href="/about">About</a>
-                <a href="/contact">Contact</a>
-                <a href="/register">Register</a>
-            </ul>
+      <ul>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/register">Register</a>
+      </ul>
 
-            <a href="javascript:void(0);" class="icon" onclick="showVerticalMobileMenu()">
-                <i class="fa fa-bars"></i>
-            </a>
+      <a href="javascript:void(0);" class="icon" onclick="showVerticalMobileMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+  </header>
+  <aside class="mobile-nav">
+    <ul>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+      <a href="/register">Register</a>
+    </ul>
 
-        </nav>
-    </header>
-    <aside class="mobile-nav">
+    <a id="closeMenu" href="javascript:void(0);" class="icon" onclick="closeMobileMenu()">
+      <i class="fa fa-times-circle"></i>
+    </a>
+  </aside>
+  <main>
+    <section id="landing">
+      <iframe class="fullwidthImg"
+        src="https://www.google.com/maps/embed?pb=!4v1702659497896!6m8!1m7!1s9VntoXwywyQXiSYIuY0FYg!2m2!1d51.85212826329999!2d-8.484551050419999!3f327.4872305196967!4f-4.046952350267489!5f0.7820865974627469"
+        style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <h1>Cork Airport CoderDojo is hosted and supported by IBM Ireland.</h1>
+
+      <p>
+        Cork Airport CoderDojo is a coding club dedicated to inspiring and
+        enabling young minds to explore the world of coding and technology. We
+        are committed to fostering a vibrant and inclusive learning
+        environment where young enthusiasts can develop their coding skills
+        and unleash their creative potential.
+      </p>
+    </section>
+
+    <section>
+      <h1>Current Classes</h1>
+
+      <p>
+        We host a wide variety of different classes for both newcomers and intermediate programmers alike.
+        Classes will take place between <time datetime="14:00">14:00</time> to <time datetime="15:20">15:20</time> and
+        <time datetime="15:40">15:40</time> to <time datetime="17:00">17:00</time>.
+      </p>
+
+      <p>
+        You can come for just the class you want - i.e. you can come at <time datetime="15:30">15:30</time> for the
+        later class in the evening, or if only attending the early class, you can leave at that time.
+      </p>
+
+      <div class="table-container">
+        <table class="classes-table">
+          <thead>
+            <tr>
+              <td>Time</td>
+              <td>Class name</td>
+              <td>Description</td>
+              <td>Experience</td>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td rowspan="3" class="nobreak">
+                <time datetime="14:00">14:00</time> -
+                <time datetime="15:20">15:20</time>
+              </td>
+              <td>Beginner's Python</td>
+              <td>Introduction to programming fundamentals</td>
+              <td>Beginner</td>
+            </tr>
+            <tr>
+              <td>Beginner's HTML</td>
+              <td>Introduction to website development</td>
+              <td>Beginner</td>
+            </tr>
+            <tr>
+              <td>Introduction to C++</td>
+              <td>Introduction to a difficult, statically-typed language.</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td rowspan="3" class="nobreak">
+                <time datetime="15:40">15:40</time> -
+                <time datetime="17:00">17:00</time>
+              </td>
+              <td>Intermediate Python</td>
+              <td>
+                Continuing with development of Python skills (Object-Oriented
+                Programming)
+              </td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td>Intermediate JavaScript</td>
+              <td>Continuing to learn the scripting language of the web</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td>Advanced Projects</td>
+              <td>
+                A chance for more experienced coders to develop projects that
+                can help them grow, and put these projects in their CV
+              </td>
+              <td>Experienced</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h1>How to join?</h1>
+      <p>
+        Either send an email to the Dojo leader
+        <a href="mailto:thomas.daniel.galligan@ibm.com">thomas.daniel.galligan@ibm.com</a>
+        and ask if there is availability for new members, or click
+        <a href="">here</a>.
+      </p>
+    </section>
+    <!-- 
+      <section>
+        <h1>Our mission</h1>
+
+        <p> At Cork Airport CoderDojo, our mission is to inspire and equip the next generation of innovators with the
+          skills and confidence needed to thrive in an ever-evolving technological landscape. Through hands-on
+          coding sessions, mentorship, and creative projects, we aim to cultivate a passion for technology and
+          instill a sense of curiosity that will drive our young participants toward exciting opportunities in the
+          world of STEM (Science, Technology, Engineering, and Mathematics).
+        </p>
+    </section> -->
+  </main>
+  <footer>
+    <div class="inner">
+      <nav class="quicklinks">
         <ul>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
-            <a href="/register">Register</a>
+          <a href="/about">About</a>
+          <a href="/blog">Blog</a>
+          <a href="/about/#safeguarding">Safeguarding Policy</a>
+          <a href="/contact">Get in touch</a>
         </ul>
-
-        <a id="closeMenu" href="javascript:void(0);" class="icon" onclick="closeMobileMenu()">
-            <i class="fa fa-times-circle"></i>
-        </a>
-
-    </aside>
-    <main>
-        <section id="landing">
-            <!-- <img src="/assets/redhat_office.png" alt="" class="fullwidthImg"> -->
-            <iframe
-                class="fullwidthImg"
-                src="https://www.google.com/maps/embed?pb=!4v1702659497896!6m8!1m7!1s9VntoXwywyQXiSYIuY0FYg!2m2!1d51.85212826329999!2d-8.484551050419999!3f327.4872305196967!4f-4.046952350267489!5f0.7820865974627469"
-                style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            <h1>IBM Cork CoderDojo is a member of the CoderDojo movement!</h1>
-
-            <p>
-                IBM Cork CoderDojo is an integral part of the global CoderDojo Foundation, dedicated to inspiring and
-                enabling young minds to explore the world of coding and technology. As a local chapter, we are committed
-                to fostering a vibrant and inclusive learning environment where young enthusiasts can develop their
-                coding skills and unleash their creative potential.
-            </p>
-        </section>
-
-        <section">
-            <!-- <img src="https://placehold.co/600x400/png" alt=""> -->
-            <h1>About CoderDojo</h1>
-
-            <p>
-                CoderDojo is a global movement aimed at providing free, open, and inclusive programming clubs for young
-                people, also known as "Dojos." These Dojos serve as spaces where young individuals, referred to as
-                Ninjas, can learn to code, build projects, and explore the exciting realms of technology in a fun and
-                collaborative setting. Founded on the principles of community, mentorship, and self-directed learning,
-                CoderDojo empowers young minds to become creators and problem-solvers in the digital age.
-            </p>
-        </section>
-
-        <section>
-            <h1>Our mission</h1>
-
-            <p>At IBM Cork CoderDojo, our mission is to inspire and equip the next generation of innovators with the
-                skills and confidence needed to thrive in an ever-evolving technological landscape. Through hands-on
-                coding sessions, mentorship, and creative projects, we aim to cultivate a passion for technology and
-                instill a sense of curiosity that will drive our young participants toward exciting opportunities in the
-                world of STEM (Science, Technology, Engineering, and Mathematics).
-            </p>
-        </section>
-    </main>
-    <footer>
-        <div class="inner">
-            <nav class="quicklinks">
-                <ul>
-                    <a href="/about">About</a>
-                    <a href="/blog">Blog</a>
-                    <a href="/about/#safeguarding">Safeguarding</a>
-                    <a href="/contact">Get in touch</a>
-                </ul>
-            </nav>
-            <nav class="socials">
-                <span>Socials</span>
-                <ul>
-                    <a href="https://twitter.com/ibmcorkdojo">
-                        <i class="fab fa-twitter-square"></i>
-                    </a>
-                    <a href="https://linkedin.com/company/ibmcorkdojo">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:CorkIBM.ie@coderdojo.com">
-                        <i class="fa fa-envelope"></i>
-                    </a>
-                </ul>
-            </nav>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+      </nav>
+      <nav class="socials">
+        <span>Socials</span>
+        <ul>
+          <a href="https://twitter.com/corkairportdojo">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+          <a href="https://linkedin.com/company/cork-airport-coderdojo">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:thomas.daniel.galligan@ibm.com">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

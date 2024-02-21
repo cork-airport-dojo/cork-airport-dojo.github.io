@@ -1,272 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IBM Cork CoderDojo</title>
-    <link rel="stylesheet" href="/globals.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
-        integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/scripts/hljs/github-dark-dimmed.min.css">
-    <script src="/scripts/hljs/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cork Airport CoderDojo</title>
+  <link rel="stylesheet" href="/globals.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+    integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/scripts/hljs/github-dark-dimmed.min.css" />
+  <script src="/scripts/hljs/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll()
+  </script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="/" class="dojo-logo">
-                <img src="/assets/coderdojo_round_logo.svg" alt="" srcset="">
-                CoderDojo @ IBM Cork
-            </a>
+  <header>
+    <nav>
+      <a href="/" class="dojo-logo">
+        <img src="/assets/coderdojo_round_logo.svg" alt="" srcset="" />
+        Cork Airport CoderDojo
+      </a>
 
-            <ul>
-                <a class="active" href="/about">About</a>
-                <a href="/contact">Contact</a>
-                <a href="/register">Register</a>
-            </ul>
+      <ul>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/register">Register</a>
+      </ul>
 
-            <a href="javascript:void(0);" class="icon" onclick="showVerticalMobileMenu()">
-                <i class="fa fa-bars"></i>
-            </a>
+      <a href="javascript:void(0);" class="icon" onclick="showVerticalMobileMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+  </header>
+  <aside class="mobile-nav">
+    <ul>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+      <a href="/register">Register</a>
+    </ul>
 
-        </nav>
-    </header>
-    <aside class="mobile-nav">
+    <a id="closeMenu" href="javascript:void(0);" class="icon" onclick="closeMobileMenu()">
+      <i class="fa fa-times-circle"></i>
+    </a>
+
+  </aside>
+  <main>
+
+    <section id="getting-to-class">
+      <h1>Getting to class</h1>
+      <iframe class="gmaps" style="border:0" loading="lazy" allowfullscreen
+        src="https://www.google.com/maps/embed/v1/search?q=IBM+Cork+Airport+Business+Park+Coderdojo&key=AIzaSyA5_7WF_saY3y6Y-EcWXOCJG8Bw5Mc2D5s"></iframe>
+      </iframe>
+
+      <p>
+        Cork Airport CoderDojo takes place on IBM premesis in the Red Hat building in the Cork Airport Business
+        Park. You will see lots of Red Hat branding, but don't worry, you're in the right place. The bottom
+        floor is for IBM offices, where we will host classes. The office is just down the road from the Cork
+        International Hotel.
+      </p>
+
+      <a href="https://www.google.com/maps/dir/?api=1&destination=IBM+Cork+Airport+Business+Park+Coderdojo">
+        <code>Directions: 6700 Avenue 6000, Lehenagh More, Cork, T12 XR60</code>
+      </a>
+
+      <p id="parent-requirement">
+        <strong>
+          If your child is younger than 13, you (the parent / guardian) will need to stay in the building
+        </strong>
+        during their class(es). There is a kitchen where you can relax and have a tea or
+        coffee and chat withother parents while you wait. Alternatively, you can sit in with the kids and take
+        part in the class with them.
+      </p>
+
+    </section>
+
+    <section id="what-you-need-to-bring">
+      <h1>What you need to bring</h1>
+
+      <ul>
+        <li>
+          a laptop
+        </li>
+        <li>
+          a lunch, if you like
+        </li>
+        <li>
+          a parent - <strong>very important</strong> <a href="#parent-requirement">read more</a>
+        </li>
+      </ul>
+
+      <p>
+        Please ensure that if the laptop is using Windows, that the version is not version <code>S</code>, as this is a
+        locked-down version of Windows, that doesn't allow one to install any software outside of the Windows Store.
+      </p>
+    </section>
+
+    <section id="grading">
+      <h1>
+        Grading
+      </h1>
+
+      <p>
+        At CoderDojo, when kids reach a milestone in their learning, they receive a certificate and a new belt
+        (a USB-stick on a rubber bracelet with increasing storage the higher grade the belt). Generally,
+        completing a semester of a class
+        will
+        yield a new belt for a student.
+      </p>
+
+      <p>
+        We previously used end-of-semester tests to gauge kids on what they've learned, but going forward, we
+        will base
+        each kids' progression off a project they complete during the semester for that class. For example; a
+        kid who completes
+        a website project for the Beginners' HTML class will receive a white belt (the first one).
+      </p>
+    </section>
+
+    <section id="safeguarding">
+      <h1>Safeguarding</h1>
+
+      <p>
+        CoderDojo's safeguarding policy aims to protect protect children, young people, and vulnerable adults
+        who take part in CoderDojo activities.
+      </p>
+      <p>
+        All Cork Airport Coderdojo mentors will have completed CoderDojo's safeguarding module, which covers the
+        following topics;
+      <ul>
+        <li>code of behavior</li>
+        <li>child disclosures</li>
+        <li>online safety</li>
+      </ul>
+
+      To see more information about CoderDojo's policies on safeguarding and child safety, <a
+        href="https://help.coderdojo.com/cdkb/s/article/Safeguarding-Policy">click here</a>.
+      </p>
+
+    </section>
+
+  </main>
+  <footer>
+    <div class="inner">
+      <nav class="quicklinks">
         <ul>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
-            <a href="/register">Register</a>
+          <a href="/about">About</a>
+          <a href="/blog">Blog</a>
+          <a href="/about/#safeguarding">Safeguarding</a>
+          <a href="/contact">Get in touch</a>
         </ul>
-
-        <a id="closeMenu" href="javascript:void(0);" class="icon" onclick="closeMobileMenu()">
-            <i class="fa fa-times-circle"></i>
-        </a>
-
-    </aside>
-    <main>
-
-        <section id="getting-to-class">
-            <h1>Getting to class</h1>
-            <iframe class="gmaps" style="border:0" loading="lazy" allowfullscreen
-                src="https://www.google.com/maps/embed/v1/search?q=IBM+Cork+Airport+Business+Park+Coderdojo&key=AIzaSyA5_7WF_saY3y6Y-EcWXOCJG8Bw5Mc2D5s"></iframe>
-            </iframe>
-
-            <p>
-                CoderDojo @ IBM Cork takes place on IBM premesis in the Red Hat building in the Cork Airport Business
-                Park. You will see lots of Red Hat branding, but don't worry, you're in the right place. The bottom
-                floor is for IBM offices, where we will host classes. The office is just down the road from the Cork
-                International Hotel.
-            </p>
-
-            <a href="https://www.google.com/maps/dir/?api=1&destination=IBM+Cork+Airport+Business+Park+Coderdojo">
-                <code>Directions: 6700 Avenue 6000, Lehenagh More, Cork, T12 XR60</code>
-            </a>
-
-            <p id="parent-requirement">
-                <strong>
-                    If your kid is younger than 13, you (the parents / guardians) will need to stay in the building
-                </strong>
-                during their class(es). There is a kitchen where you can relax and have a tea or
-                coffee and chat withother parents while you wait. Alternatively, you can sit in with the kids and take
-                part in the class with them.
-            </p>
-
-        </section>
-
-        <section id="classes">
-            <h1>Classes</h1>
-
-            <p>
-                We host a wide variety of different classes for both newcomers and intermediate programmers alike.
-                Classes will take place between <time datetime="14:00">14:00</time> to <time
-                    datetime="15:30">15:30</time> and <time datetime="15:30">15:30</time> to <time
-                    datetime="17:00">17:00</time>.
-            </p>
-
-            <p>
-                Normally, beginner's classes will take place in the earlier time slot. Normally, we run some of the
-                following classes, detailed below
-            </p>
-
-            <table class="classes-table">
-                <thead>
-                    <tr>
-                        <td>
-                            Experience level
-                        </td>
-                        <td>
-                            Class name
-                        </td>
-                        <td>
-                            Notes
-                        </td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            Beginner
-                        </td>
-                        <td>
-                            Beginner's HTML
-                        </td>
-                        <td>Introduction to web development</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Beginner
-                        </td>
-                        <td>
-                            Advanced HTML
-                        </td>
-                        <td>
-                            Generally for those who've completed Beginner's HTML, expands on previous experience.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Intermediate
-                        </td>
-                        <td>
-                            Introduction to programming
-                        </td>
-                        <td>
-                            Introduction to either Python 3 or JavaScript, with the aim to solve problems, and complete
-                            projects.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Intermediate
-                        </td>
-                        <td>
-                            Data structures &amp; algorithms
-                        </td>
-                        <td>
-                            Using Python 3 to design algorithms and introduction to optimizing algorithms for
-                            computation and memory complexity. Will also include advanced project work, excellent for
-                            projects for a developer's resume.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Advanced
-                        </td>
-                        <td>
-                            Game development
-                        </td>
-                        <td>
-                            Using previous experience with User Interface and advanced algorithms and data structures,
-                            start learning how games work and design a simple game.
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <p>
-                We are very open to suggestions on new classes to try out, and have mentors with a broad range of
-                experience, and are very capable to teach.
-            </p>
-        </section>
-
-        <section id="what-you-need-to-bring">
-            <h1>What you need to bring</h1>
-
-            <ul>
-                <li>
-                    a laptop
-                </li>
-                <li>
-                    a lunch, if you like
-                </li>
-                <li>
-                    a parent - <strong>very important</strong> <a href="#parent-requirement">read more</a>
-                </li>
-            </ul>
-
-            <p>
-                We recommend that if you can, install <a href="https://code.visualstudio.com/">Visual Studio Code</a>
-                (important, don't install Visual Studio -
-                similar name, very different programs). Visual Studio Code (or VSCode) is a text-editor, something
-                programmers use to write code, and using a good one can help children learn coding fundamentals faster.
-            </p>
-        </section>
-
-        <section id="grading">
-            <h1>
-                Belts and grading
-            </h1>
-
-            <p>
-                At CoderDojo, when kids reach a milestone in their learning, they receive a certificate and a new belt
-                (a USB-stick with increasing storage the higher the belt). Generally, completing a semester of a class
-                will
-                yield a new belt for a student.
-            </p>
-
-            <p>
-                We previously used end-of-semester tests to gauge kids on what they've learned, but going forward, we
-                will base
-                each kids' progression off a project they complete during the semester for that class. For example; a
-                kid who completes
-                a website project for the Beginners' HTML class will receive a white belt (the first one).
-            </p>
-        </section>
-
-        <section id="safeguarding">
-            <h1>Safeguarding</h1>
-
-            <p>
-                CoderDojo's safeguarding policy aims to protect protect children, young people, and vulnerable adults
-                who take part in CoderDojo activities.
-            </p>
-            <p>
-                All CoderDojo @ IBM Cork mentors will have completed CoderDojo's safeguarding module, which covers the
-                following topics;
-            <ul>
-                <li>code of behavior</li>
-                <li>child disclosures</li>
-                <li>online safety</li>
-            </ul>
-
-            To see more information about CoderDojo's policies on safeguarding and child safety, <a
-                href="https://help.coderdojo.com/cdkb/s/article/Safeguarding-Policy">click here</a>.
-            </p>
-
-        </section>
-
-    </main>
-    <footer>
-        <div class="inner">
-            <nav class="quicklinks">
-                <ul>
-                    <a href="/about">About</a>
-                    <a href="/blog">Blog</a>
-                    <a href="/about/#safeguarding">Safeguarding</a>
-                    <a href="/contact">Get in touch</a>
-                </ul>
-            </nav>
-            <nav class="socials">
-                <span>Socials</span>
-                <ul>
-                    <a href="https://twitter.com/ibmcorkdojo">
-                        <i class="fab fa-twitter-square"></i>
-                    </a>
-                    <a href="https://linkedin.com/company/ibmcorkdojo">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:CorkIBM.ie@coderdojo.com">
-                        <i class="fa fa-envelope"></i>
-                    </a>
-                </ul>
-            </nav>
-        </div>
-    </footer>
-    <script src="/script.js"></script>
+      </nav>
+      <nav class="socials">
+        <span>Socials</span>
+        <ul>
+          <a href="https://twitter.com/ibmcorkdojo">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+          <a href="https://linkedin.com/company/ibmcorkdojo">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:CorkIBM.ie@coderdojo.com">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="/script.js"></script>
 </body>
 
 </html>

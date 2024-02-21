@@ -1,106 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IBM Cork CoderDojo</title>
-    <link rel="stylesheet" href="/globals.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
-        integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/scripts/hljs/github-dark-dimmed.min.css">
-    <script src="/scripts/hljs/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cork Airport CoderDojo</title>
+  <link rel="stylesheet" href="/globals.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+    integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/scripts/hljs/github-dark-dimmed.min.css" />
+  <script src="/scripts/hljs/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll()
+  </script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="/" class="dojo-logo">
-                <img src="/assets/coderdojo_round_logo.svg" alt="" srcset="">
-                CoderDojo @ IBM Cork
-            </a>
+  <header>
+    <nav>
+      <a href="/" class="dojo-logo">
+        <img src="/assets/coderdojo_round_logo.svg" alt="" srcset="" />
+        Cork Airport CoderDojo
+      </a>
 
-            <ul>
-                <a href="/about">About</a>
-                <a class="active" href="/contact">Contact</a>
-                <a href="/register">Register</a>
-            </ul>
+      <ul>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/register">Register</a>
+      </ul>
 
-            <a href="javascript:void(0);" class="icon" onclick="showVerticalMobileMenu()">
-                <i class="fa fa-bars"></i>
-            </a>
+      <a href="javascript:void(0);" class="icon" onclick="showVerticalMobileMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+  </header>
+  <aside class="mobile-nav">
+    <ul>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+      <a href="/register">Register</a>
+    </ul>
 
-        </nav>
-    </header>
-    <aside class="mobile-nav">
-        <ul>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
-            <a href="/register">Register</a>
-        </ul>
+    <a id="closeMenu" href="javascript:void(0);" class="icon" onclick="closeMobileMenu()">
+      <i class="fa fa-times-circle"></i>
+    </a>
 
-        <a id="closeMenu" href="javascript:void(0);" class="icon" onclick="closeMobileMenu()">
-            <i class="fa fa-times-circle"></i>
+  </aside>
+  <main>
+
+    <ul class="contact-list">
+      <h1>Reach out via email or Linkedin message</h1>
+      <li>
+        <a href="https://linkedin.com/in/">
+          <i class="fab fa-linkedin"></i>
+          Linkedin page
         </a>
-
-    </aside>
-    <main>
-
-        <ul class="contact-list">
-            <h1>Reach out via email or Linkedin message</h1>
-            <li>
-                <a href="https://linkedin.com/in/">
-                    <i class="fab fa-linkedin"></i>
-                    Linkedin page
-                </a>
-            </li>
-            <li>
-                <a href="mailto:CorkIBM.ie@coderdojo.com">
-                    <i class="far fa-envelope"></i>
-                    Click to send an email
-                </a>
-            </li>
-            <li id="copy-to-clipboard">
-                <button onclick="copyToClipboard()">
-                    Click to copy email address to clipboard
-                </button>
-            </li>
+      </li>
+      <li>
+        <a href="mailto:CorkIBM.ie@coderdojo.com">
+          <i class="far fa-envelope"></i>
+          Click to send an email
+        </a>
+      </li>
+      <li id="copy-to-clipboard">
+        <button onclick="shareEmail()">
+          Click to copy or share email address
+        </button>
+      </li>
+    </ul>
+  </main>
+  <footer>
+    <div class="inner">
+      <nav class="quicklinks">
+        <ul>
+          <a href="/about">About</a>
+          <a href="/blog">Blog</a>
+          <a href="/about/#safeguarding">Safeguarding</a>
+          <a href="/contact">Get in touch</a>
         </ul>
-    </main>
-    <footer>
-        <div class="inner">
-            <nav class="quicklinks">
-                <ul>
-                    <a href="/about">About</a>
-                    <a href="/blog">Blog</a>
-                    <a href="/about/#safeguarding">Safeguarding</a>
-                    <a href="/contact">Get in touch</a>
-                </ul>
-            </nav>
-            <nav class="socials">
-                <span>Socials</span>
-                <ul>
-                    <a href="https://twitter.com/ibmcorkdojo">
-                        <i class="fab fa-twitter-square"></i>
-                    </a>
-                    <a href="https://linkedin.com/company/ibmcorkdojo">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:CorkIBM.ie@coderdojo.com">
-                        <i class="fa fa-envelope"></i>
-                    </a>
-                </ul>
-            </nav>
-        </div>
-        <aside class="notification">
-            <p>Copied to clipboard!</p>
-        </aside>
-    </footer>
-    <script src="/script.js"></script>
-    <script src="clipboard.js"></script>
+      </nav>
+      <nav class="socials">
+        <span>Socials</span>
+        <ul>
+          <a href="https://twitter.com/ibmcorkdojo">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+          <a href="https://linkedin.com/company/ibmcorkdojo">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:CorkIBM.ie@coderdojo.com">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </ul>
+      </nav>
+    </div>
+    <aside class="notification">
+      <p>Copied to clipboard!</p>
+    </aside>
+  </footer>
+  <script src="/script.js"></script>
+  <script src="clipboard.js"></script>
 </body>
 
 </html>
