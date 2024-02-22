@@ -1,96 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title>Register | Cork Airport Dojo</title>
+    <meta
+      name="description"
+      content="Cork Airport Dojo - A coding club dedicated to inspiring and enabling young minds to explore the world of coding and technology."
+    />
+    <meta
+      name="keywords"
+      content="Cork Airport Dojo, coding club, cork, coderdojo, technology, coding skills, programming, coding classes"
+    />
+    <meta name="robots" content="index, follow" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cork Airport Dojo</title>
-  <link rel="stylesheet" href="/globals.css" />
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
-    integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/scripts/hljs/github-dark-dimmed.min.css" />
-  <script src="/scripts/hljs/highlight.min.js"></script>
-  <script>
-    hljs.highlightAll()
-  </script>
-</head>
+    <meta property="og:title" content="Cork Airport Dojo" />
+    <meta
+      property="og:description"
+      content="A coding club dedicated to inspiring and enabling young minds to explore the world of coding and technology."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://corkairportdojo.ie" />
+    <meta property="og:site_name" content="Cork Airport Dojo Website" />
+    <meta property="og:locale" content="en_US" />
 
-<body>
-  <header>
-    <nav>
-      <a href="/" class="dojo-logo">
-        <img src="/assets/coderdojo_round_logo.svg" alt="" srcset="" />
-        Cork Airport Dojo
-      </a>
+    <link rel="stylesheet" href="/globals.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+      integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/scripts/hljs/github-dark-dimmed.min.css" />
+    <script src="/scripts/hljs/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </head>
 
+  <body>
+    <header>
+      <nav>
+        <a href="/" class="dojo-logo">
+          <img src="/assets/coderdojo_round_logo.svg" alt="" srcset="" />
+          Cork Airport Dojo
+        </a>
+
+        <ul>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
+          <a href="/register">Register</a>
+        </ul>
+
+        <a
+          href="javascript:void(0);"
+          class="icon"
+          onclick="showVerticalMobileMenu()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </header>
+    <aside class="mobile-nav">
       <ul>
+        <a href="/">Home</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
         <a href="/register">Register</a>
       </ul>
 
-      <a href="javascript:void(0);" class="icon" onclick="showVerticalMobileMenu()">
-        <i class="fa fa-bars"></i>
+      <a
+        id="closeMenu"
+        href="javascript:void(0);"
+        class="icon"
+        onclick="closeMobileMenu()"
+      >
+        <i class="fa fa-times-circle"></i>
       </a>
-    </nav>
-  </header>
-  <aside class="mobile-nav">
-    <ul>
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/contact">Contact</a>
-      <a href="/register">Register</a>
-    </ul>
+    </aside>
+    <main class="registration">
+      <h1>Register for Cork Airport Dojo!</h1>
 
-    <a id="closeMenu" href="javascript:void(0);" class="icon" onclick="closeMobileMenu()">
-      <i class="fa fa-times-circle"></i>
-    </a>
+      <p class="register">
+        Send an email to the Dojo leader
+        <a href="mailto:thomas.daniel.galligan@ibm.com"
+          >thomas.daniel.galligan@ibm.com</a
+        >
+        and ask if there is availability for new members
 
-  </aside>
-  <main class="registration">
-    <h1>
-      Register for Cork Airport Dojo!
-    </h1>
-
-    <p class="register">
-      Send an email to the Dojo leader
-      <a href="mailto:thomas.daniel.galligan@ibm.com">thomas.daniel.galligan@ibm.com</a>
-      and ask if there is availability for new members
-
-      <!-- TODO update after coderdojo website fixed -->
-      <!-- <a href="https://coderdojo.com/en/dojos/ie/cork-airport-business-park-county-cork/cork-airport-business-park-ibm-ireland" class="register">
+        <!-- TODO update after coderdojo website fixed -->
+        <!-- <a href="https://coderdojo.com/en/dojos/ie/cork-airport-business-park-county-cork/cork-airport-business-park-ibm-ireland" class="register">
             Click here to register
         </a> -->
-  </main>
-  <footer>
-    <div class="inner">
-      <nav class="quicklinks">
-        <ul>
-          <a href="/about">About</a>
-          <a href="/blog">Blog</a>
-          <a href="/about/#safeguarding">Safeguarding</a>
-          <a href="/contact">Get in touch</a>
-        </ul>
-      </nav>
-      <nav class="socials">
-        <span>Socials</span>
-        <ul>
-          <a href="https://twitter.com/corkairportdojo">
-            <i class="fab fa-twitter-square"></i>
-          </a>
-          <a href="https://www.linkedin.com/company/cork-airport-dojo">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="mailto:thomas.daniel.galligan@ibm.com">
-            <i class="fa fa-envelope"></i>
-          </a>
-        </ul>
-      </nav>
-    </div>
-  </footer>
-  <script src="/script.js"></script>
-</body>
+      </p>
+    </main>
 
+    <footer>
+      <div class="inner">
+        <nav class="quicklinks">
+          <ul>
+            <a href="/about">About</a>
+            <a href="/blog">Blog</a>
+            <a href="/about/#safeguarding">Safeguarding</a>
+            <a href="/contact">Get in touch</a>
+          </ul>
+        </nav>
+        <nav class="socials">
+          <span>Socials</span>
+          <ul>
+            <a href="https://twitter.com/corkairportdojo">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/cork-airport-dojo">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:thomas.daniel.galligan@ibm.com">
+              <i class="fa fa-envelope"></i>
+            </a>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script src="/script.js"></script>
+  </body>
 </html>

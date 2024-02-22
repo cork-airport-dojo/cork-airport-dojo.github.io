@@ -1,182 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cork Airport Dojo</title>
-  <link rel="stylesheet" href="/globals.css" />
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
-    integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/scripts/hljs/github-dark-dimmed.min.css" />
-  <script src="/scripts/hljs/highlight.min.js"></script>
-  <script>
-    hljs.highlightAll()
-  </script>
-</head>
+    <title>Cork Airport Dojo</title>
+    <meta
+      name="description"
+      content="Cork Airport Dojo - A coding club dedicated to inspiring and enabling young minds to explore the world of coding and technology."
+    />
+    <meta
+      name="keywords"
+      content="Cork Airport Dojo, coding club, cork, coderdojo, technology, coding skills, programming, coding classes"
+    />
+    <meta name="robots" content="index, follow" />
 
-<body>
-  <header>
-    <nav>
-      <a href="/" class="dojo-logo">
-        <img src="/assets/coderdojo_round_logo.svg" alt="" srcset="" />
-        Cork Airport Dojo
-      </a>
+    <meta property="og:title" content="Cork Airport Dojo" />
+    <meta
+      property="og:description"
+      content="A coding club dedicated to inspiring and enabling young minds to explore the world of coding and technology."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://corkairportdojo.ie" />
+    <meta property="og:site_name" content="Cork Airport Dojo Website" />
+    <meta property="og:locale" content="en_US" />
 
+    <link rel="stylesheet" href="/globals.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+      integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/scripts/hljs/github-dark-dimmed.min.css" />
+    <script src="/scripts/hljs/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="/" class="dojo-logo">
+          <img src="/assets/coderdojo_round_logo.svg" alt="" srcset="" />
+          Cork Airport Dojo
+        </a>
+
+        <ul>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
+          <a href="/register">Register</a>
+        </ul>
+
+        <a
+          href="javascript:void(0);"
+          class="icon"
+          onclick="showVerticalMobileMenu()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </header>
+    <aside class="mobile-nav">
       <ul>
+        <a href="/">Home</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
         <a href="/register">Register</a>
       </ul>
 
-      <a href="javascript:void(0);" class="icon" onclick="showVerticalMobileMenu()">
-        <i class="fa fa-bars"></i>
+      <a
+        id="closeMenu"
+        href="javascript:void(0);"
+        class="icon"
+        onclick="closeMobileMenu()"
+      >
+        <i class="fa fa-times-circle"></i>
       </a>
-    </nav>
-  </header>
-  <aside class="mobile-nav">
-    <ul>
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/contact">Contact</a>
-      <a href="/register">Register</a>
-    </ul>
+    </aside>
+    <main>
+      <section id="landing">
+        <iframe
+          class="fullwidthImg"
+          src="https://www.google.com/maps/embed?pb=!4v1702659497896!6m8!1m7!1s9VntoXwywyQXiSYIuY0FYg!2m2!1d51.85212826329999!2d-8.484551050419999!3f327.4872305196967!4f-4.046952350267489!5f0.7820865974627469"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
 
-    <a id="closeMenu" href="javascript:void(0);" class="icon" onclick="closeMobileMenu()">
-      <i class="fa fa-times-circle"></i>
-    </a>
-  </aside>
-  <main>
-    <section id="landing">
-      <iframe class="fullwidthImg"
-        src="https://www.google.com/maps/embed?pb=!4v1702659497896!6m8!1m7!1s9VntoXwywyQXiSYIuY0FYg!2m2!1d51.85212826329999!2d-8.484551050419999!3f327.4872305196967!4f-4.046952350267489!5f0.7820865974627469"
-        style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h1>Cork Airport Dojo is hosted and supported by IBM Ireland.</h1>
 
-      <h1>Cork Airport Dojo is hosted and supported by IBM Ireland.</h1>
+        <p>
+          Cork Airport Dojo is a coding club dedicated to inspiring and enabling
+          young minds to explore the world of coding and technology. We are
+          committed to fostering a vibrant and inclusive learning environment
+          where young enthusiasts can develop their coding skills and unleash
+          their creative potential.
+        </p>
+      </section>
 
-      <p>
-        Cork Airport Dojo is a coding club dedicated to inspiring and
-        enabling young minds to explore the world of coding and technology. We
-        are committed to fostering a vibrant and inclusive learning
-        environment where young enthusiasts can develop their coding skills
-        and unleash their creative potential.
-      </p>
-    </section>
+      <section>
+        <h1>Current Classes</h1>
 
-    <section>
-      <h1>Current Classes</h1>
+        <p>
+          We host a wide variety of different classes for both newcomers and
+          intermediate programmers alike. Classes will take place
+          <strong>on Saturdays</strong> between
+          <time datetime="14:00">14:00</time> to
+          <time datetime="15:20">15:20</time> and
+          <time datetime="15:40">15:40</time> to
+          <time datetime="17:00">17:00</time>.
+        </p>
 
-      <p>
-        We host a wide variety of different classes for both newcomers and intermediate programmers alike.
-        Classes will take place <strong>on Saturdays</strong> between <time datetime="14:00">14:00</time> to <time
-          datetime="15:20">15:20</time> and
-        <time datetime="15:40">15:40</time> to <time datetime="17:00">17:00</time>.
-      </p>
+        <p>
+          You can come for just the class you want. We take a break at around
+          <time datetime="15:30">15:30</time> between classes, which can be a
+          good opportunity to arrive for the second class, or leave after the
+          first class.
+        </p>
 
-      <p>
-        You can come for just the class you want. We take a break at around <time datetime="15:30">15:30</time> between
-        classes, which can be a good opportunity to arrive for the second class, or leave after the first class.
-      </p>
+        <div class="table-container">
+          <table class="classes-table">
+            <thead>
+              <tr>
+                <td>Time</td>
+                <td>Class name</td>
+                <td>Description</td>
+                <td>Experience</td>
+              </tr>
+            </thead>
 
-      <div class="table-container">
-        <table class="classes-table">
-          <thead>
-            <tr>
-              <td>Time</td>
-              <td>Class name</td>
-              <td>Description</td>
-              <td>Experience</td>
-            </tr>
-          </thead>
+            <tbody>
+              <tr>
+                <td rowspan="3" class="nobreak">
+                  <time datetime="14:00">14:00</time> -
+                  <time datetime="15:20">15:20</time>
+                </td>
+                <td>Beginner's Python</td>
+                <td>Introduction to programming fundamentals</td>
+                <td>Beginner</td>
+              </tr>
+              <tr>
+                <td>Beginner's HTML</td>
+                <td>Introduction to website development</td>
+                <td>Beginner</td>
+              </tr>
+              <tr>
+                <td>Introduction to C++</td>
+                <td>Introduction to a difficult, statically-typed language.</td>
+                <td>Intermediate</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="nobreak">
+                  <time datetime="15:40">15:40</time> -
+                  <time datetime="17:00">17:00</time>
+                </td>
+                <td>Intermediate Python</td>
+                <td>
+                  Continuing with development of Python skills (Object-Oriented
+                  Programming)
+                </td>
+                <td>Intermediate</td>
+              </tr>
+              <tr>
+                <td>Intermediate JavaScript</td>
+                <td>Continuing to learn the scripting language of the web</td>
+                <td>Intermediate</td>
+              </tr>
+              <tr>
+                <td>Advanced Projects</td>
+                <td>
+                  A chance for more experienced coders to develop projects that
+                  can help them grow, and put these projects in their CV
+                </td>
+                <td>Experienced</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
 
-          <tbody>
-            <tr>
-              <td rowspan="3" class="nobreak">
-                <time datetime="14:00">14:00</time> -
-                <time datetime="15:20">15:20</time>
-              </td>
-              <td>Beginner's Python</td>
-              <td>Introduction to programming fundamentals</td>
-              <td>Beginner</td>
-            </tr>
-            <tr>
-              <td>Beginner's HTML</td>
-              <td>Introduction to website development</td>
-              <td>Beginner</td>
-            </tr>
-            <tr>
-              <td>Introduction to C++</td>
-              <td>Introduction to a difficult, statically-typed language.</td>
-              <td>Intermediate</td>
-            </tr>
-            <tr>
-              <td rowspan="3" class="nobreak">
-                <time datetime="15:40">15:40</time> -
-                <time datetime="17:00">17:00</time>
-              </td>
-              <td>Intermediate Python</td>
-              <td>
-                Continuing with development of Python skills (Object-Oriented
-                Programming)
-              </td>
-              <td>Intermediate</td>
-            </tr>
-            <tr>
-              <td>Intermediate JavaScript</td>
-              <td>Continuing to learn the scripting language of the web</td>
-              <td>Intermediate</td>
-            </tr>
-            <tr>
-              <td>Advanced Projects</td>
-              <td>
-                A chance for more experienced coders to develop projects that
-                can help them grow, and put these projects in their CV
-              </td>
-              <td>Experienced</td>
-            </tr>
-          </tbody>
-        </table>
+      <section>
+        <h1>How to join?</h1>
+        <p>
+          Either send an email to the Dojo leader
+          <a href="mailto:thomas.daniel.galligan@ibm.com"
+            >thomas.daniel.galligan@ibm.com</a
+          >
+          and ask if there is availability for new members, or click
+          <a href="">here</a>.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="inner">
+        <nav class="quicklinks">
+          <ul>
+            <a href="/about">About</a>
+            <a href="/blog">Blog</a>
+            <a href="/about/#safeguarding">Safeguarding</a>
+            <a href="/contact">Get in touch</a>
+          </ul>
+        </nav>
+        <nav class="socials">
+          <span>Socials</span>
+          <ul>
+            <a href="https://twitter.com/corkairportdojo">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/cork-airport-dojo">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:thomas.daniel.galligan@ibm.com">
+              <i class="fa fa-envelope"></i>
+            </a>
+          </ul>
+        </nav>
       </div>
-    </section>
-
-    <section>
-      <h1>How to join?</h1>
-      <p>
-        Either send an email to the Dojo leader
-        <a href="mailto:thomas.daniel.galligan@ibm.com">thomas.daniel.galligan@ibm.com</a>
-        and ask if there is availability for new members, or click
-        <a href="">here</a>.
-      </p>
-    </section>
-  </main>
-  <footer>
-    <div class="inner">
-      <nav class="quicklinks">
-        <ul>
-          <a href="/about">About</a>
-          <a href="/blog">Blog</a>
-          <a href="/about/#safeguarding">Safeguarding</a>
-          <a href="/contact">Get in touch</a>
-        </ul>
-      </nav>
-      <nav class="socials">
-        <span>Socials</span>
-        <ul>
-          <a href="https://twitter.com/corkairportdojo">
-            <i class="fab fa-twitter-square"></i>
-          </a>
-          <a href="https://www.linkedin.com/company/cork-airport-dojo">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="mailto:thomas.daniel.galligan@ibm.com">
-            <i class="fa fa-envelope"></i>
-          </a>
-        </ul>
-      </nav>
-    </div>
-  </footer>
-  <script src="script.js"></script>
-</body>
-
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
