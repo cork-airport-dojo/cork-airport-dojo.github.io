@@ -61,6 +61,10 @@ time {
   font-family: 'IBM Plex Mono', monospace;
 }
 
+time {
+  font-weight: 600;
+}
+
 header {
   font-size: 1.2em;
   max-width: 100vw;
