@@ -40,6 +40,10 @@ h5 {
   word-wrap: break-word;
 }
 
+p {
+  font-size: 1.1em;
+}
+
 a {
   text-decoration: none;
 }
@@ -137,6 +141,10 @@ main {
   box-sizing: border-box;
   padding: 1em 1em 2em 1em;
   overflow: hidden;
+}
+
+main section {
+  padding: 12px;
 }
 
 main p {
@@ -347,15 +355,86 @@ footer .quicklinks a {
   justify-content: center;
 }
 
-#faq>h1 {
+#faq > h1 {
   margin-bottom: 0em;
 }
 
-#faq>section{
+#faq > section {
   padding-top: 1em;
 }
 
-@media only screen and (min-width: 900px) {
+#faq details summary {
+  margin-bottom: 0.4em;
+}
+
+#faq details p {
+  margin-bottom: 1em;
+}
+
+.alerts {
+  position: fixed;
+  display: block;
+  bottom: 1rem;
+  left: 0%;
+  right: 0%;
+  width: 100dvw;
+  min-height: 60px;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.alert {
+  position: relative;
+  background-color: var(--primary);
+  color: white;
+  font-weight: normal;
+  box-shadow: 3px 10px 5px 3px #0009;
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  padding: 15px 20px;
+  align-items: center;
+  justify-content: center;
+  animation: alertSlide 0.3s;
+}
+
+.alert p {
+  white-space: pre-wrap;
+}
+
+.alert > * {
+  margin: 1rem;
+}
+
+.close_btn {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+/* Slide in animation */
+@keyframes alertSlide {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#example_alert {
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
   header a {
     display: inline;
   }
@@ -401,9 +480,13 @@ footer .quicklinks a {
     left: unset;
     bottom: var(--footer-size);
   }
+
+  .alert {
+    width: 100% !important;
+  }
 }
 
-@media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   header > nav {
     width: var(--desktop-width);
   }
