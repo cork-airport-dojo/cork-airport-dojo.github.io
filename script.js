@@ -37,31 +37,6 @@ const fetchEvents = async () => {
 
     alerts.appendChild(newNode);
   });
-
-  // const activeIssues = issues.filter((issue) => {
-  //   return (
-  //     issue.title.startsWith('!') &&
-  //     issue.state == 'open' &&
-  //     GITHUB_AUTHORS.includes(issue.user.login) // ensure the submitter can't be someone random
-  //   );
-  // });
-
-  // activeIssues.forEach((issue) => {
-  //   const newNode = alert_template.cloneNode(true);
-  //   newNode.id = '';
-
-  //   const title = newNode.querySelector('.alert_title');
-  //   const desc = newNode.querySelector('.alert_desc');
-
-  //   title.textContent = issue.title ? issue.title.slice(1) : '';
-  //   desc.textContent = issue.body ? issue.body : '';
-  //   // Add event listener to the close button
-  //   newNode.querySelector('.close_btn').addEventListener('click', function () {
-  //     newNode.remove();
-  //   });
-
-  //   alerts.appendChild(newNode);
-  // });
 };
 
 /**
