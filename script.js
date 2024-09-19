@@ -71,5 +71,3 @@ window.addEventListener('resize', fixWidths);
 fixWidths();
 
 (async () => await fetchEvents())();
-
-// await fetchEvents();
