@@ -45,11 +45,11 @@ p {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 main a:visited {
-  color: blue;
+  color: #970297;
 }
 
 a:hover {
@@ -264,6 +264,7 @@ footer .quicklinks a {
   border-collapse: collapse;
   border: 1px solid var(--legal);
   width: 100%;
+  padding: 1em;
 }
 
 .classes-table td {
@@ -273,6 +274,7 @@ footer .quicklinks a {
 
 .classes-table thead {
   font-weight: 700;
+  border-bottom: 2px solid black;
 }
 
 .classes-table .nobreak {

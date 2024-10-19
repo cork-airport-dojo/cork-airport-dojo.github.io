@@ -22,6 +22,10 @@ const fetchEvents = async () => {
   console.log({ announcements });
 
   announcements.forEach((announcement) => {
+
+    if (announcement.trim() == "") {
+      return;
+    }
     const newNode = alert_template.cloneNode(true);
     newNode.id = '';
 
