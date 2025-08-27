@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+
+@theme {
+    --font-dispay: "Urbanist", sans-serif;
+}
+
+
+@layer base {
+    html {
+        font-family: var(--font-dispay);
+    }
+
+    body {
+        background-color: #000000;
+        overflow-x: hidden;
+    }
+}
+
+/*:root {
+    font-family: "inter", sans-serif;
+    background: black;
+}*/
+/*@theme {
+    --color-primary: #f19509;
+    --color-primaryDark: #e86f00;
+    --color-lightOrange: #f1dabf;
+    --color-darkGray: #1a1f25;
+    --color-lightGray: #272c35;
+
+}*/
+
+/* .main-container {
+    !*padding: 1rem ;
+     center: ture;
+
+    @variant sm {
+        padding: 2rem;
+    }*!
+
+}*/
+
+/*@layer utility {
+
+    .img-shadow {
+        filter: drop-shadow(0 25px 25px rgb(255, 255, 255, 0.4));
+        !*filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15))*!
+    }
+}*/
+
+/*
+body {
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    background-color: black ;
+    color: white;
+}*/
