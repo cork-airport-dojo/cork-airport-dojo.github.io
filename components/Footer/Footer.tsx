@@ -1,7 +1,6 @@
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { GrMapLocation } from "react-icons/gr";
 import { TfiEmail } from "react-icons/tfi";
-import { AiOutlineDiscord } from "react-icons/ai";
 import { IoLogoLinkedin,IoLogoGithub } from "react-icons/io5";
 import { SiGoogleforms } from "react-icons/si";
 import { Link } from "react-router-dom";
