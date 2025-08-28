@@ -9,7 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-import { TeamData } from "../../utils/data";
+import { TeamData } from "@/utils/data";
 
 interface TeamProps {
   imageUrl: string;

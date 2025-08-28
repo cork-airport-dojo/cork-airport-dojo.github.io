@@ -43,7 +43,8 @@ const ContactForm = () => {
   };
 
   const validatePhone = (phone: string) => {
-    return /^[- +()0-9]{7,20}$/.test(phone.trim());
+    // return /^[- +()0-9]{7,20}$/.test(phone.trim());
+    return true;
   };
 
   const validateForm = (data = formData): FormErrors => {
@@ -52,8 +53,6 @@ const ContactForm = () => {
     else if (data.name.trim().length < 2) newErrors.name = "Name must be at least 2 characters";
     if (!data.email.trim()) newErrors.email = "Email is required.";
     else if (!validateEmail(data.email)) newErrors.email = "Please enter a valid email address";
-    if (!data.phone.trim()) newErrors.phone = "Phone number is required.";
-    else if (!validatePhone(data.phone)) newErrors.phone = "Enter a valid phone number";
     if (!data.subject.trim()) newErrors.subject = "Subject is required.";
     else if (data.subject.trim().length < 5) newErrors.subject = "Subject must be at least 5 characters";
     if (!data.message.trim()) newErrors.message = "Message is required.";

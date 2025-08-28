@@ -1,9 +1,9 @@
 import {motion, useInView, useScroll, useTransform} from "framer-motion";
 
-import { containerVariants, itemsVariants} from "../../utils/helper.tsx";
+import { containerVariants, itemsVariants} from "@/utils/helper.tsx";
 import { useRef } from "react";
 
-const AboutUs = () => {
+const AboutSection = () => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-100px"});
 
@@ -19,7 +19,7 @@ const AboutUs = () => {
     <section
     id="about"
     ref={sectionRef}
-    className={`py-24 px-6 bg-white text-gray-900
+    className={`px-6 bg-white text-gray-900
     relative overflow-hidden`}
     >
     <motion.div
@@ -84,4 +84,4 @@ const AboutUs = () => {
   )
 }
 
-export default AboutUs;
+export default AboutSection;

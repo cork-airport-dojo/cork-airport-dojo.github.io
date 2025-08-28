@@ -1,3 +1,5 @@
+import { Variants } from "framer-motion"
+
 export const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -9,7 +11,7 @@ export const containerVariants = {
   }
 }
 
-export const itemsVariants = {
+export const itemsVariants: Variants = {
   hidden: { y: 30, opacity: 0 },
   visible: {
     y: 0,

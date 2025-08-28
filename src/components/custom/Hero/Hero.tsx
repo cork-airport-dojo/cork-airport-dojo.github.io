@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import LOGO from "../../assets/logo.png";
+import LOGO from '@assets/logo.png';
 import { Link } from 'react-router-dom';
 
 
-import { containerVariants, itemsVariants} from "../../utils/helper.tsx";
+import { containerVariants, itemsVariants} from "@/utils/helper.tsx";
 
 const Hero_3 =()=> {
 
