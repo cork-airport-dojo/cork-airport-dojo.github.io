@@ -75,11 +75,11 @@ const ContactForm = () => {
     const val = e.target.value;
     let fieldError = "";
     if (field === "email" && !validateEmail(val)) fieldError = "Please enter a valid email address";
-    if (field === "phone" && !validatePhone(val)) fieldError = "Enter a valid phone number";
+    if (field === "phone" && !validatePhone(val)) fieldError = "Enter a valid phone number.";
     if (field === "name" && (!val.trim() || val.trim().length < 2)) fieldError = "Name must be at least 2 characters";
     if (field === "subject" && (!val.trim() || val.trim().length < 5)) fieldError = "Subject must be at least 5 characters";
     if (field === "message" && (!val.trim() || val.trim().length < 10)) fieldError = "Message must be at least 10 characters";
-    if (!val.trim()) fieldError = `${field.charAt(0).toUpperCase() + field.slice(1)} is required`;
+    if (!val.trim()) fieldError = `${field.charAt(0).toUpperCase() + field.slice(1)} is required.`;
     setErrors(e => ({ ...e, [field]: fieldError !== "" ? fieldError : undefined }));
   };
 
