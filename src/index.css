@@ -17,6 +17,10 @@
     }
 }
 
+button {
+    cursor: pointer; /* Shadcn buttons reset this */
+}
+
 /*:root {
     font-family: "inter", sans-serif;
     background: black;
