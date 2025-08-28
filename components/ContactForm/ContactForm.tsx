@@ -48,15 +48,15 @@ const ContactForm = () => {
 
   const validateForm = (data = formData): FormErrors => {
     const newErrors: FormErrors = {};
-    if (!data.name.trim()) newErrors.name = "Name is required";
+    if (!data.name.trim()) newErrors.name = "Name is required.";
     else if (data.name.trim().length < 2) newErrors.name = "Name must be at least 2 characters";
-    if (!data.email.trim()) newErrors.email = "Email is required";
+    if (!data.email.trim()) newErrors.email = "Email is required.";
     else if (!validateEmail(data.email)) newErrors.email = "Please enter a valid email address";
-    if (!data.phone.trim()) newErrors.phone = "Phone number is required";
+    if (!data.phone.trim()) newErrors.phone = "Phone number is required.";
     else if (!validatePhone(data.phone)) newErrors.phone = "Enter a valid phone number";
-    if (!data.subject.trim()) newErrors.subject = "Subject is required";
+    if (!data.subject.trim()) newErrors.subject = "Subject is required.";
     else if (data.subject.trim().length < 5) newErrors.subject = "Subject must be at least 5 characters";
-    if (!data.message.trim()) newErrors.message = "Message is required";
+    if (!data.message.trim()) newErrors.message = "Message is required.";
     else if (data.message.trim().length < 10) newErrors.message = "Message must be at least 10 characters";
     else if (data.message.length > 4000) newErrors.message = "Message must be less than 4000 characters";
     return newErrors;
