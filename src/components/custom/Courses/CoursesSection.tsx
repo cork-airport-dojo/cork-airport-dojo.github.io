@@ -22,7 +22,7 @@ const CoursesSection = () => {
           {COURSES_CATEGORY.map((course, id) => (
             <div key={id} className="group bg-card rounded-lg overflow-hidden shadow-xl/30 card-hover">
               <div className="h-48 overflow-hidden">
-                <img src={course.img} alt={course.description} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-120" />
+                <img src={course.img} alt={course.description} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 justify-center">

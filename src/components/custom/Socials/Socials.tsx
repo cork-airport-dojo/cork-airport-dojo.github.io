@@ -26,15 +26,15 @@ const Socials = () => {
         <IoLogoGithub className="text-xl md:text-2xl sm:text-xl transition-transform duration-300"/>
       </motion.a>
 
-      <motion.a href={'https://forms.office.com/r/eXfdztgLqX'}
+      {/* <motion.a href={'https://forms.office.com/r/eXfdztgLqX'}
             className='group inline-flex items-center gap-2 px-4 py-2 rounded-xl transition-colors
                   hover:bg-gradient-to-r hover:from-purple-300 hover:to-purple-500
                   text-base md:text-lg lg:text-xl'
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="GoogleDrive">
+            aria-label="Register">
         <SiGoogleforms className="text-xl md:text-2xl sm:text-xl transition-transform duration-300"/>
-      </motion.a>
+      </motion.a> */}
     </div>
     )
 }

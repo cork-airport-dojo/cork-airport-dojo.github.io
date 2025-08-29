@@ -43,7 +43,7 @@ const OurTeam = () => {
   return (
     <section
       id="team"
-      className="max-w-7xl mx-auto w-full z-10 mt-20 pb-24"
+      className="min-h-screen max-w-7xl mx-auto w-full z-10 mt-20 py-24"
     >
       <h2 className="text-3xl md:text-4xl pt-12 font-bold">
         <span className="bg-gradient-to-b from-purple-500/60 to-purple-900 text-transparent bg-clip-text">
@@ -52,9 +52,8 @@ const OurTeam = () => {
         Team
       </h2>
 
-      <p className="mt-4 mb-10 text-xl text-muted-foreground">
-        Thomas Galligan will update this section to add a few lines of text about the Code Club team. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+      <p className="mt-8 mb-24 text-xl text-muted-foreground">
+        These IBMers give their time and energy each week to make Cork Airport Code Club happen.
       </p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
