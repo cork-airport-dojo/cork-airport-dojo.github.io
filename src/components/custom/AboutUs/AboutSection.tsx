@@ -19,7 +19,7 @@ const AboutSection = () => {
     <section
       id="about"
       ref={sectionRef}
-      className='min-h-screen relative flex items-center justify-center relative px-6 pt-30'
+      className='min-h-screen relative flex items-center justify-center px-6 pt-30'
     >
       <motion.div
         style={{ y }}
@@ -52,7 +52,7 @@ const AboutSection = () => {
           </motion.h2>
           
           <motion.p className="text-lg text-gray-700" variants={textVariants}>
-            Cork Airport Code Club takes place on IBM premesis in the Red Hat building
+            Cork Airport Code Club takes place on IBM premises in the Red Hat building
             in the Cork Airport Business Park. You will see lots of Red Hat branding,
             but don't worry, you're in the right place. The bottom floor is for
             IBM offices, where we will host classes. The office is just down the

@@ -5,9 +5,16 @@ import ContactUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
 import Navbar from "./components/custom/Navbar/Navbar";
 import NavSideBar from "./components/custom/Navbar/NavSideBar";
+import FAQClub from "./components/custom/FAQClub/FAQClub";
 import Footer from "./components/custom/Footer/Footer";
+import { useEffect } from "react";
+import emailjs from "@emailjs/browser";
 
 const App = () => {
+
+  useEffect(() => {
+    emailjs.init("rfT-AnCTo-OXhDpsX");
+  }, []);
 
   return (
 
@@ -20,6 +27,7 @@ const App = () => {
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/faq" element={<FAQClub />} />
         </Routes>
       </main>
       <Footer />
