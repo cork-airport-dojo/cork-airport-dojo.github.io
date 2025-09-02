@@ -12,9 +12,35 @@
     }
 
     body {
-        background-color: #000000;
+        /* background-color: #000000; */
         overflow-x: hidden;
     }
+
+    main ul {
+        margin: 1em 0 1em 4ch;
+        list-style-type: square;
+    }
+
+    main p {
+        margin: 0.8em 0;
+    }
+    
+    main a {
+        text-decoration: underline;
+    }
+
+    main *:target {
+        background-color: #b1ff2b;
+    }
+
+    address {
+        font-style: normal;
+    }
+
+}
+
+button {
+    cursor: pointer; /* Shadcn buttons reset this */
 }
 
 /*:root {

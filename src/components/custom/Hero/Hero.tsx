@@ -1,55 +1,62 @@
 import { motion } from "framer-motion";
-import LOGO from "../../assets/logo.png";
+import LOGO from '@assets/logo.png';
 import { Link } from 'react-router-dom';
 
+import { containerVariants, itemsVariants, textVariants, imageVariants } from "@/utils/helper.tsx";
 
-import { containerVariants, itemsVariants} from "../../utils/helper.tsx";
+const HeroLinks = (): React.ReactNode => {
 
-const Hero_3 =()=> {
+  const container_class = 'flex flex-col sm:flex-row gap-4 justify-left items-center mb-8'
 
-  const textVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut"
-      }
-    }
-  }
+  const links = [
+    { 'label': 'Register', 'url': 'https://forms.office.com/r/eXfdztgLqX', 'primary': true },
+    { 'label': 'Learn more', 'url': '/about' }
+  ]
 
-  const imageVariants = {
-    hidden: { y: 50, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 1,
-        ease: "easeOut",
-        delay: 0.5
-      }
-    }
-  }
+  return (
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+      className={container_class}
+    >
+      {links.map((obj) => (
+        <Link to={obj.url} className="block m-0 p-0" target="_blank">
+          <motion.button
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.98 }}
+            className={`${obj?.primary ? 'bg-blue-500 hover:bg-blue-600 text-white' : 'border border-gray-300 hover:border-gray-400 text-gray-700'} px-8 py-4 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300`}
+          >
+            {obj.label}
+          </motion.button>
+        </Link>
+
+      ))}
+    </motion.div>
+  )
+}
+
+const Hero_3 = () => {
+
   // @ts-ignore
   return (
-    <div className={`min-h-screen transition-all duration-500 bg-gray-50 text-gray-900`}>
+    <div className={``}>
       <motion.section
         id="home"
         className="min-h-screen flex items-center justify-center relative px-6 pt-10"
       >
         <div className="absolute inset-0 overflow-hidden">
           <motion.div
-          animate={{
-            scale: [1, 1.1, 1],
-            rotate: [0, 180, 360]
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "linear"
-          }}
-          className={`absolute top-20 right-20 w-64 h-64 rounded-full blur-3xl opacity-10 bg-blue-500
+            animate={{
+              scale: [1, 1.1, 1],
+              rotate: [0, 180, 360]
+            }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              ease: "linear"
+            }}
+            className={`absolute top-20 right-20 w-64 h-64 rounded-full blur-3xl opacity-10 bg-blue-500
           `}
           />
 
@@ -79,19 +86,19 @@ const Hero_3 =()=> {
               <motion.div variants={imageVariants} className="mb-8">
                 <div className="w-32 h-32 mx-auto relative">
                   <motion.div
-                  whileHover={{scale: 1.05}}
-                  className={`w-full h-32 rounded-2xl overflow-hidden border-gray-300`}
+                    whileHover={{ scale: 1.05 }}
+                    className={`w-full h-32 rounded-2xl overflow-hidden border-gray-300`}
                   >
-                  <img
-                    src={LOGO}
-                    alt={"Logo"}
-                    className="w-full h-full object-cover"
-                  />
+                    <img
+                      src={LOGO}
+                      alt={"Logo"}
+                      className="w-full h-full object-cover"
+                    />
                   </motion.div>
 
                   {/*Decorative*/}
                   <motion.div
-                    animate={{rotate: 360}}
+                    animate={{ rotate: 360 }}
                     transition={{
                       duration: 20,
                       repeat: Infinity,
@@ -105,8 +112,8 @@ const Hero_3 =()=> {
 
               {/*Content*/}
               <motion.div
-              variants={textVariants}
-              className={`text-sm uppercase tracking-widest text-gray-600
+                variants={textVariants}
+                className={`text-sm uppercase tracking-widest text-gray-600
               mb-4`}
               >
                 Cork Airport Code Club
@@ -118,41 +125,53 @@ const Hero_3 =()=> {
                 className="text-3xl md:text-5xl font-light mb-6 leading-tight"
               >
                 <span className={`text-gray-900`}>
-                Code it
+                  Code it{" "}
                 </span>
                 <span className="text-blue-500 font-medium ml-2">
-                Break it
+                  Break it
                 </span>
                 <br />
                 {/*<span className={`${isDarkMode ? "text-white": "text-gray-900"}`}>*/}
                 <span className={`text-gray-900`}>
-                Build it better
+                  Build it better
                 </span>
               </motion.h1>
 
               <motion.p
-              variants={itemsVariants}
-              className={`text-base md:text-lg text-gray-600
+                variants={itemsVariants}
+                className={`text-base md:text-lg text-gray-600
                mb-8 max-w-xl mx-auto font-light leading-relaxed`}
               >
-                Cork Airport Code Club is a vibrant and welcoming community where children and young adults can explore
-                the exciting world of technology! Every Saturday, we provide hands-on coding sessions covering a wide
-                range of skills, from the fundamentals of HTML and Javascript to cutting-edge topics like AI and graphic
-                design.  More than just learning to code, Code Club is a safe and supportive space for young people to be
+                Cork Airport Code Club is a great opportunity for children and teens can explore the exciting world of technology.
+
+                Every Saturday, we provide hands-on coding experience covering a range of topics, from the fundamentals of website development, to cutting-edge topics like AI.
+
+                More than just learning to code, Code Club is a safe and supportive space for young people to be
                 themselves, connect with like-minded peers, and grow their tech skills in a fun and engaging environment.
               </motion.p>
-
+              <HeroLinks />
+              {/* 
               <motion.div
                 variants={itemsVariants}
                 className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8"
               >
-                <Link to="/team" className="block m-0 p-0">
+                <Link to="/about" className="block m-0 p-0">
                   <motion.button
                     whileHover={{ y: -2}}
                     whileTap={{ scale: 0.98}}
                     className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300"
                   >
-                    View Team
+                    Learn more
+                  </motion.button>
+                </Link>
+                <Link to="/team" className="block m-0 p-0">
+                  <motion.button
+                    whileHover={{ y: -2 }}
+                    whileTap={{ scale: 0.98 }}
+                    className={`border border-gray-300 hover:border-gray-400 text-gray-700
+                    px-8 py-3 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300`}
+                  >
+                    Meet the team
                   </motion.button>
                 </Link>
                 <Link to="/contact" className="block m-0 p-0">
@@ -165,7 +184,7 @@ const Hero_3 =()=> {
                     Get in Contact
                 </motion.button>
                 </Link>
-              </motion.div>
+              </motion.div> */}
 
 
             </motion.div>
@@ -193,29 +212,42 @@ const Hero_3 =()=> {
                 className="text-5xl xl:text-7xl font-light mb-8 leading-tight"
               >
                 <span className={`text-gray-900`}>
-                Code it,
+                  Code it,{" "}
                 </span>
                 <span className="text-blue-500 font-medium">
-                Break it,
+                  Break it,
                 </span>
                 <br />
                 <span className={`text-gray-900`}>
-                Build it better
+                  Build it better
                 </span>
               </motion.h1>
 
               <motion.p
                 variants={itemsVariants}
                 className={`text-xl text-gray-600
-                 mb-12 font-light leading-relaxed max-w-lg`}
+                 mb-4 font-light leading-7 max-w-lg`}
               >
-                Cork Airport Code Club is a vibrant and welcoming community where children and young adults can explore
-                the exciting world of technology! Every Saturday, we provide hands-on coding sessions covering a wide
-                range of skills, from the fundamentals of HTML and Javascript to cutting-edge topics like AI and graphic
-                design.  More than just learning to code, Code Club is a safe and supportive space for young people to be
-                themselves, connect with like-minded peers, and grow their tech skills in a fun and engaging environment.
+                Cork Airport Code Club is a great opportunity for children and teens can explore the exciting world of technology.
               </motion.p>
+              <motion.p
+                variants={itemsVariants}
+                className={`text-xl text-gray-600
+                 mb-4 font-light leading-7 max-w-lg`}
+              >
+                Every Saturday, we provide hands-on coding experience covering a range of topics, from the fundamentals of website development, to cutting-edge topics like AI.
+              </motion.p>
+              <motion.p
+                variants={itemsVariants}
+                className={`text-xl text-gray-600
+                 mb-12 font-light leading-7 max-w-lg`}
+              >
+              More than just learning to code, Code Club is a safe and supportive space for young people to be
+              themselves, connect with like-minded peers, and grow their tech skills in a fun and engaging environment.
+            </motion.p>
+            <HeroLinks />
 
+            {/*
               <motion.div
                 variants={itemsVariants}
                 className="flex gap-6 mb-8"
@@ -233,7 +265,6 @@ const Hero_3 =()=> {
                 <motion.button
                   whileHover={{y: -2}}
                   whileTap={{ scale: 0.98}}
-                  /*onClick={() => scrollToSection("contact")}*/
                   className={`border border-gray-300 hover:border-gray-400 text-gray-700
                   px-8 py-4 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300`}
                 >
@@ -241,20 +272,22 @@ const Hero_3 =()=> {
                 </motion.button>
                 </Link>
               </motion.div>
+              */}
 
-            </motion.div>
+          </motion.div>
 
-            <>{/*Right Column*/}</>
-            <motion.div
-              initial="hidden"
-              animate="visible"
-              variants={imageVariants}
-              className="flex justify-center lg:justify-end"
-            >
+
+          <>{/*Right Column*/}</>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={imageVariants}
+            className="flex justify-center lg:justify-end"
+          >
             <div className="relative">
 
               <motion.div
-                whileHover={{scale: 1.02}}
+                whileHover={{ scale: 1.02 }}
                 className={`w-100 h-96 rounded-3xl overflow-hidden border-gray-300`}
               >
                 <img
@@ -265,7 +298,7 @@ const Hero_3 =()=> {
               </motion.div>
 
               <motion.div
-                animate={{ rotate: 360}}
+                animate={{ rotate: 360 }}
                 transition={{
                   duration: 20,
                   repeat: Infinity,
@@ -275,7 +308,7 @@ const Hero_3 =()=> {
               />
 
               <motion.div
-                animate={{ rotate: -360}}
+                animate={{ rotate: -360 }}
                 transition={{
                   duration: 30,
                   repeat: Infinity,
@@ -285,11 +318,11 @@ const Hero_3 =()=> {
               />
 
             </div>
-            </motion.div>
-          </div>
+          </motion.div>
         </div>
-      </motion.section>
     </div>
+      </motion.section >
+    </div >
   )
 }
 

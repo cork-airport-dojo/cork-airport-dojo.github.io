@@ -27,5 +27,5 @@
       "@public/*" : ["public/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "src/components/custom/AboutUs", "src/components/custom/ContactForm", "src/components/custom/Courses", "src/components/custom/Footer", "src/components/custom/Hero", "src/components/custom/Navbar", "src/components/custom/OurTeam", "src/components/custom/Particles_Container", "src/components/custom/Socials"]
 }

@@ -1,11 +1,11 @@
-import { COURSES_CATEGORY } from "../../utils/data";
+import { COURSES_CATEGORY } from "@/utils/data";
 
 
 const CoursesSection = () => {
 
 
   return (
-    <section id={"courses"} className={`py-24 pt-12 px-4 relative`}>
+    <section id={"courses"} className={`py-12 px-4 relative`}>
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           Code Club
@@ -22,7 +22,7 @@ const CoursesSection = () => {
           {COURSES_CATEGORY.map((course, id) => (
             <div key={id} className="group bg-card rounded-lg overflow-hidden shadow-xl/30 card-hover">
               <div className="h-48 overflow-hidden">
-                <img src={course.img} alt={course.description} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-120" />
+                <img src={course.img} alt={course.description} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 justify-center">

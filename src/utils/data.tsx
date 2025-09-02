@@ -1,18 +1,30 @@
 
-import Murphy from "../assets/team/Murphy.png";
-import Aishling from "../assets/team/Aishling.png";
-import Thomas from "../assets/team/Thomas.png";
-import Riti from "../assets/team/Riti.png";
-import Conor from "../assets/team/Conor.png";
-import Yaya from "../assets/team/Yaya.png";
-import Sami from "../assets/team/Sami.png"
+import Murphy from "@assets/team/Murphy.png";
+import Aishling from "@assets/team/Aishling.png";
+import Thomas from "@assets/team/Thomas.png";
+import Riti from "@assets/team/Riti.png";
+import Conor from "@assets/team/Conor.png";
+import Yaya from "@assets/team/Yaya.png";
+import Sami from "@assets/team/Sami.png"
 
-import forge from "../assets/courses/forge.png";
-import beginner_python from "../assets/courses/beginner_python.png";
-import python from "../assets/courses/python_artwork.png";
-import ai_agents from "../assets/courses/ai_agents.png";
+import forge from "@assets/courses/forge.png";
+import beginner_python from "@assets/courses/beginner_python.png";
+import python from "@assets/courses/python_artwork.png";
+import ai_agents from "@assets/courses/ai_agents.png";
 
+export const RedHatBuildingAddressLabel = (props: {block: boolean | undefined} | undefined): React.ReactNode => {
+  const address_text = ['IBM, Building 6700', ' Avenue 6000', 'Lehenagh More', 'T12XR60']
+  const cn = props?.block ? 'block' : '';
+  const mapsUrl = 'https://www.google.com/maps/dir/?api=1&destination=IBM+Cork+Airport+Business+Park+Coderdojo';
 
+  return (
+    <address>
+      <a href={mapsUrl} target="_blank">
+        {address_text.map((address_line) => <span className={cn}>{address_line}{" "}</span>)}
+      </a>
+    </address>
+  )
+}
 
 export const COURSES_CATEGORY = [
   {

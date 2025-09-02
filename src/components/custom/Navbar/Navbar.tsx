@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
-import header_icon from '../../assets/logo.png';
+import header_icon from '@assets/logo.png';
 
 import  Socials  from '../Socials/Socials';
 
