@@ -45,7 +45,7 @@ const FAQClub: React.FC = () => {
   };
 
   return (
-    <div className="max-w-2xl mx-auto mt-20 p-4">
+    <div className="max-w-2xl min-h-screen mx-auto flex flex-col items-center justify-center mt-20 p-4">
       <h2 className="text-center text-3xl md:text-5xl font-light mb-12">Frequently Asked <span className="text-blue-500 font-medium"> Questions</span></h2>
       <div className="space-y-4">
         {faqData.map((item, idx) => (
