@@ -1,4 +1,4 @@
-import {  Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Team from "./pages/Team";
 import ContactUs from "./pages/ContactUs";
@@ -18,20 +18,20 @@ const App = () => {
 
   return (
 
-      <div className="">
+    <div className="">
       <Navbar />
       <NavSideBar />
       <main className={`min-h-screen transition-all duration-500  bg-gray-50 text-gray-900`}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/contact" element={<ContactUs />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/faq" element={<FAQClub />} />
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/faq" element={<FAQClub />} />
+          </Routes>
       </main>
       <Footer />
-      </div>
+    </div>
   )
 }
 

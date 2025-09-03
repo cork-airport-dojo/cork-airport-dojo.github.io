@@ -45,8 +45,8 @@ const OurTeam = () => {
       id="team"
       className="min-h-screen max-w-7xl mx-auto w-full z-10 mt-10 py-24"
     >
-      <h2 className="text-3xl md:text-4xl pt-8 font-bold">
-        <span className="bg-gradient-to-b from-purple-500/60 to-purple-900 text-transparent bg-clip-text">
+      <h2 className="text-3xl md:text-4xl pt-8 font-bold text-blue-500">
+        <span className="text-gray-900">
           Our Dedicated{" "}
         </span>
         Team
