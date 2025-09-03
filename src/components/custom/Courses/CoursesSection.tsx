@@ -37,7 +37,6 @@ const CoursesSection = () => {
                   <div className="flex space-x-3">
                       <a>
                         {" "}
-                        
                       </a>
                   </div>
               </div>

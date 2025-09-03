@@ -3,7 +3,7 @@ import {
 } from 'react-icons/hi2';
 
 import { HiOutlineHome } from "react-icons/hi";
-import { IoInformationCircleOutline } from "react-icons/io5";
+import { FcFaq, FcAbout } from "react-icons/fc";
 
 
 import { RiTeamFill } from "react-icons/ri";
@@ -12,10 +12,11 @@ import { Link, useLocation } from "react-router-dom";
 
 
 const navData = [
-  {name: 'home', path: '/', icon: <HiOutlineHome /> },
-  {name: 'about', path: '/about', icon: <IoInformationCircleOutline /> },
-  {name: 'team', path: '/team', icon: <RiTeamFill /> },
-  {name: 'contact', path: '/contact', icon: <HiEnvelope /> }
+  {name: 'Home', path: '/', icon: <HiOutlineHome /> },
+  {name: 'About Us', path: '/about', icon: <FcAbout /> },
+  {name: 'The Team', path: '/team', icon: <RiTeamFill /> },
+  {name: 'Contact Us', path: '/contact', icon: <HiEnvelope /> },
+  {name: 'FAQ', path: '/faq', icon: <FcFaq /> }
 ];
 
 const NavSideBar = () => {

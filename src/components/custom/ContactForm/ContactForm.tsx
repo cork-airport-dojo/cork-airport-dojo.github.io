@@ -1,10 +1,10 @@
 import {
-  Mail, Clock, MapPin, Phone,
+  Mail, MapPin, Phone,
   AlertCircle, ArrowRight, User,
   MessageSquare, CheckCircle, Captions
 } from "lucide-react";
 import { useState } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from "@emailjs/browser";
 import { RedHatBuildingAddressLabel } from "@/utils/data";
 
 type FormData = {
@@ -43,10 +43,6 @@ const ContactForm = () => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   };
 
-  const validatePhone = (phone: string) => {
-    // return /^[- +()0-9]{7,20}$/.test(phone.trim());
-    return true;
-  };
 
   const validateForm = (data = formData): FormErrors => {
     const newErrors: FormErrors = {};
@@ -75,11 +71,14 @@ const ContactForm = () => {
     const val = e.target.value;
     let fieldError = "";
     if (field === "email" && !validateEmail(val)) fieldError = "Please enter a valid email address";
-    if (field === "phone" && !validatePhone(val)) fieldError = "Enter a valid phone number.";
     if (field === "name" && (!val.trim() || val.trim().length < 2)) fieldError = "Name must be at least 2 characters";
     if (field === "subject" && (!val.trim() || val.trim().length < 5)) fieldError = "Subject must be at least 5 characters";
     if (field === "message" && (!val.trim() || val.trim().length < 10)) fieldError = "Message must be at least 10 characters";
-    if (!val.trim()) fieldError = `${field.charAt(0).toUpperCase() + field.slice(1)} is required.`;
+
+    const requiredFields: (keyof FormData)[] = ["name", "email", "subject", "message"];
+    if (!val.trim() && requiredFields.includes(field)) {
+      fieldError = `${field.charAt(0).toUpperCase() + field.slice(1)} is required.`;
+    }
     setErrors(e => ({ ...e, [field]: fieldError !== "" ? fieldError : undefined }));
   };
 
@@ -93,11 +92,12 @@ const ContactForm = () => {
     setStatus("loading");
     try {
       await emailjs.send(
-        "",
-        "",
-        formData,
-        ""
+
+        "service_1yvil4k",
+        "template_bwx2q44",
+        formData
       )
+
       setStatus("complete");
       setFormData(initialForm);
       setTouched(new Set());
@@ -153,13 +153,9 @@ const ContactForm = () => {
                       <div>
                         <h3 className="font-semibold text-gray-900 mb-1">Visit Us</h3>
                         <p className="text-gray-600 mb-1">Ask for Thomas Galligan</p>
-                        <p className="">
+                        <div>
                           <RedHatBuildingAddressLabel block />
-                        </p>
-                        {/* <address>
-                          Red Hat Building <br /> 6700 Avenue 6000 Cork, <br /> County Cork, Ireland
-                        </address> */}
-
+                        </div>
                       </div>
                     </div>
                     <div className="flex items-start space-x-4">
@@ -169,7 +165,7 @@ const ContactForm = () => {
                       <div>
                         <h3 className="font-semibold text-gray-900 mb-1">Reach out over Whatsapp</h3>
                         <div>
-                          <p className="text-gray-600 mb-1">You will be added to the group on your kids' first day.</p>
+                          <p className="text-gray-600 mb-1">You will be added to the group on your kid's first day.</p>
                         </div>
                       </div>
                     </div>
@@ -185,7 +181,7 @@ const ContactForm = () => {
               {/* Main Form */}
               <div className="lg:col-span-3">
                 <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-                  <div className="bg-gray-900 px-8 py-6">
+                  <div className="bg-gradient-to-r from-indigo-900 to-blue-700 px-8 py-6">
                     <h2 className="text-2xl font-bold text-white mb-2">Send us a message.</h2>
                     <p className="text-gray-300">Fill out the form below and we'll get back to you soon.</p>
                   </div>
@@ -249,7 +245,7 @@ const ContactForm = () => {
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                       <div>
-                        <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">Phone Number*</label>
+                        <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
                         <div className="relative">
                           <Phone className="absolute left-3 top-4 w-5 h-5 text-gray-400" />
                           <input

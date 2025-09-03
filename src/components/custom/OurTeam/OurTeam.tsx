@@ -43,9 +43,9 @@ const OurTeam = () => {
   return (
     <section
       id="team"
-      className="min-h-screen max-w-7xl mx-auto w-full z-10 mt-20 py-24"
+      className="min-h-screen max-w-7xl mx-auto w-full z-10 mt-10 py-24"
     >
-      <h2 className="text-3xl md:text-4xl pt-12 font-bold">
+      <h2 className="text-3xl md:text-4xl pt-8 font-bold">
         <span className="bg-gradient-to-b from-purple-500/60 to-purple-900 text-transparent bg-clip-text">
           Our Dedicated{" "}
         </span>

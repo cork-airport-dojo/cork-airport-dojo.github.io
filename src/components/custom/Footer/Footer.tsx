@@ -17,13 +17,16 @@ const Footer = () => {
             <div className="space-y-6 flex flex-col items-between justify-between">
               <h1 className="text-3xl uppercase">Cork Airport Code Club</h1>
               <div>
-                <p className="flex items-center gap-2">
+                <p className="flex flex-wrap items-center gap-2 mb-4 break-all">
                   <TfiEmail />
                   thomas.daniel.galligan@ibm.com
                 </p>
-                <p className="flex items-center gap-2 mt-2 text-sm">
-                  <GrMapLocation /> <RedHatBuildingAddressLabel block={false} />
-                </p>
+                <div className="flex items-center gap-2 flex-nowrap">
+                  <GrMapLocation className="flex-shrink-0" />
+                  <span className="break-words">
+                    <RedHatBuildingAddressLabel block={false} />
+                  </span>
+                </div>
               </div>
             </div>
             {/*Quick Links*/}
@@ -43,10 +46,8 @@ const Footer = () => {
                 <div>
                   <ul className="space-y-2">
                     <li><Link to="/team" className="block">Team</Link></li>
+                    <li><Link to="/faq" className="block">FAQ</Link></li>
                     <li><Link to="/about/#safeguarding" className="block">Safeguarding</Link></li>
-                    {/* <li><Link to="/blog" className="block">Blog</Link></li> */}
-                    {/* <li><Link to="/grading" className="block">Grading</Link></li> */}
-                    {/* <li><Link to="/register" className="block">Register</Link></li> */}
                   </ul>
                 </div>
               </div>
