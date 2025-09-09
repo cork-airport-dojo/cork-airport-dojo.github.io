@@ -10,7 +10,6 @@ import { RedHatBuildingAddressLabel } from "@/utils/data";
 type FormData = {
   name: string;
   email: string;
-  phone: string;
   subject: string;
   message: string;
 };
@@ -20,7 +19,6 @@ type FormErrors = Partial<Record<keyof FormData, string>>;
 const initialForm: FormData = {
   name: "",
   email: "",
-  phone: "",
   subject: "",
   message: "",
 };
@@ -93,8 +91,8 @@ const ContactForm = () => {
     try {
       await emailjs.send(
 
-        "service_1yvil4k",
-        "template_bwx2q44",
+        "service_8dvqmne",
+        "template_6998p1s",
         formData
       )
 
@@ -143,7 +141,7 @@ const ContactForm = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold text-gray-900 mb-1">Email Us</h3>
-                        <p className="text-gray-600 mb-1">thomas.daniel.galligan@ibm.com</p>
+                        <span className="text-gray-600 mb-1">thomas.daniel.galligan@ibm.com</span>
                       </div>
                     </div>
                     <div className="flex items-start space-x-4">
@@ -152,7 +150,7 @@ const ContactForm = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold text-gray-900 mb-1">Visit Us</h3>
-                        <p className="text-gray-600 mb-1">Ask for Thomas Galligan</p>
+                        <span className="text-gray-600 mb-1">Ask for Thomas Galligan</span>
                         <div>
                           <RedHatBuildingAddressLabel block />
                         </div>
@@ -165,7 +163,7 @@ const ContactForm = () => {
                       <div>
                         <h3 className="font-semibold text-gray-900 mb-1">Reach out over Whatsapp</h3>
                         <div>
-                          <p className="text-gray-600 mb-1">You will be added to the group on your kid's first day.</p>
+                          <span className="text-gray-600 mb-1">You will be added to the group on your kid's first day.</span>
                         </div>
                       </div>
                     </div>
@@ -238,32 +236,6 @@ const ContactForm = () => {
                           {touched.has("email") && errors.email && (
                             <p id="email-error" className="text-red-600 text-sm flex items-center mt-2">
                               <AlertCircle className="w-4 h-4 mr-1" /> {errors.email}
-                            </p>
-                          )}
-                        </div>
-                      </div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                      <div>
-                        <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
-                        <div className="relative">
-                          <Phone className="absolute left-3 top-4 w-5 h-5 text-gray-400" />
-                          <input
-                            type="tel"
-                            id="phone"
-                            name="phone"
-                            className={`${getInputClasses("phone")} pl-10`}
-                            placeholder="Phone Number"
-                            value={formData.phone}
-                            onChange={handleInputChange}
-                            onBlur={handleBlur}
-                            aria-invalid={!!errors.phone}
-                            aria-describedby={errors.phone ? "phone-error" : undefined}
-                            autoComplete="tel"
-                          />
-                          {touched.has("phone") && errors.phone && (
-                            <p id="phone-error" className="text-red-600 text-sm flex items-center mt-2">
-                              <AlertCircle className="w-4 h-4 mr-1" /> {errors.phone}
                             </p>
                           )}
                         </div>
