@@ -3,20 +3,19 @@ import {
 } from 'react-icons/hi2';
 
 import { HiOutlineHome } from "react-icons/hi";
-import { FcFaq, FcAbout } from "react-icons/fc";
-
-
 import { RiTeamFill } from "react-icons/ri";
+import { GiBookshelf } from "react-icons/gi";
+import { BsFillQuestionSquareFill } from "react-icons/bs";
 
 import { Link, useLocation } from "react-router-dom";
 
 
 const navData = [
   {name: 'Home', path: '/', icon: <HiOutlineHome /> },
-  {name: 'About Us', path: '/about', icon: <FcAbout /> },
+  {name: 'About Us', path: '/about', icon: <GiBookshelf /> },
   {name: 'The Team', path: '/team', icon: <RiTeamFill /> },
   {name: 'Contact Us', path: '/contact', icon: <HiEnvelope /> },
-  {name: 'FAQ', path: '/faq', icon: <FcFaq /> }
+  {name: 'FAQ', path: '/faq', icon: <BsFillQuestionSquareFill /> }
 ];
 
 const NavSideBar = () => {

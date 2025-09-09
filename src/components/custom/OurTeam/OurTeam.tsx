@@ -8,6 +8,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import {   FiGithub, FiLinkedin } from "react-icons/fi";
+import { CgWebsite } from "react-icons/cg";
 
 import { TeamData } from "@/utils/data";
 
@@ -23,8 +25,7 @@ interface SociaNetworkslProps {
   name: string;
   url: string;
 }
-import {   FiGithub, FiLinkedin } from "react-icons/fi";
-import { CgWebsite } from "react-icons/cg";
+
 
 const OurTeam = () => {
   const socialIcon = (iconName: string) => {

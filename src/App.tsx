@@ -13,7 +13,7 @@ import emailjs from "@emailjs/browser";
 const App = () => {
 
   useEffect(() => {
-    emailjs.init("rfT-AnCTo-OXhDpsX");
+    emailjs.init("bNwktbc4EGNVF_zWT");
   }, []);
 
   return (
