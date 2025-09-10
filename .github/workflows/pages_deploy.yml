@@ -2,7 +2,7 @@ name: Pages Deploy
 
 on:
   push:
-    branches: [main, citest]
+    branches: [main]
 
 jobs:
   build:
@@ -29,7 +29,6 @@ jobs:
           path: public/
 
   deploy:
-
     permissions:
       pages: write      # to deploy to Pages
       id-token: write   # to verify the deployment originates from an appropriate source
