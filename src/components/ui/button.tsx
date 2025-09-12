@@ -51,6 +51,7 @@ function Button(
         {React.cloneElement(
           React.Children.only(props.children) as React.ReactElement,
           {
+            // @ts-ignore
             className: cn(buttonVariants({ variant, size, className })),
             ref,
             ...props,

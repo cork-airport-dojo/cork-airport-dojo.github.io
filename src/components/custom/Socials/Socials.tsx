@@ -1,5 +1,4 @@
 import { IoLogoLinkedin,IoLogoGithub } from "react-icons/io5";
-import { SiGoogleforms } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const Socials = () => {

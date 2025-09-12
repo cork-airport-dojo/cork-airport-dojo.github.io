@@ -21,7 +21,7 @@ const HeroLinks = (): React.ReactNode => {
       className={container_class}
     >
       {links.map((obj) => (
-        <Link to={obj.url} className="block m-0 p-0" target="_blank">
+        <Link to={obj.url} className="block m-0 p-0" target={obj.primary ? '_blank' : ''}>
           <motion.button
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.98 }}
@@ -150,42 +150,6 @@ const Hero_3 = () => {
                 themselves, connect with like-minded peers, and grow their tech skills in a fun and engaging environment.
               </motion.p>
               <HeroLinks />
-              {/* 
-              <motion.div
-                variants={itemsVariants}
-                className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8"
-              >
-                <Link to="/about" className="block m-0 p-0">
-                  <motion.button
-                    whileHover={{ y: -2}}
-                    whileTap={{ scale: 0.98}}
-                    className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300"
-                  >
-                    Learn more
-                  </motion.button>
-                </Link>
-                <Link to="/team" className="block m-0 p-0">
-                  <motion.button
-                    whileHover={{ y: -2 }}
-                    whileTap={{ scale: 0.98 }}
-                    className={`border border-gray-300 hover:border-gray-400 text-gray-700
-                    px-8 py-3 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300`}
-                  >
-                    Meet the team
-                  </motion.button>
-                </Link>
-                <Link to="/contact" className="block m-0 p-0">
-                  <motion.button
-                    whileHover={{ y: -2}}
-                    whileTap={{ scale: 0.98}}
-                    className={`border border-gray-300 hover:border-gray-400 text-gray-700
-                    px-8 py-3 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300`}
-                  >
-                    Get in Contact
-                </motion.button>
-                </Link>
-              </motion.div> */}
-
 
             </motion.div>
           </div>
