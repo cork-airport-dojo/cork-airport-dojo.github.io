@@ -7,7 +7,7 @@ import Navbar from "./components/custom/Navbar/Navbar";
 import NavSideBar from "./components/custom/Navbar/NavSideBar";
 import FAQClub from "./components/custom/FAQClub/FAQClub";
 import Footer from "./components/custom/Footer/Footer";
-import Notification from "./components/custom/Notification/Notificaiton";
+import Notification from "./components/custom/Notification/Notification";
 import { useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { useElementHeight} from "@/hooks/useElementHeight";

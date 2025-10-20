@@ -10,7 +10,7 @@ const HeroLinks = (): React.ReactNode => {
 
   const links = [
     /*{ 'label': 'Register', 'url': 'https://forms.office.com/r/eXfdztgLqX', 'primary': true },*/
-    { 'label': 'Learn more', 'url': '/about' }
+    { 'label': 'Learn more', 'url': '/about', 'primary': false }
   ]
 
   return (
@@ -21,7 +21,7 @@ const HeroLinks = (): React.ReactNode => {
       className={container_class}
     >
       {links.map((obj) => (
-        <Link to={obj.url} className="block m-0 p-0" target={obj.primary ? '_blank' : ''}>
+        <Link to={obj.url} className="block m-0 p-0" target={obj?.primary ? '_blank' : ''}>
           <motion.button
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.98 }}
