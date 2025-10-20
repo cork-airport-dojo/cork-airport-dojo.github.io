@@ -9,7 +9,7 @@ const HeroLinks = (): React.ReactNode => {
   const container_class = 'flex flex-col sm:flex-row gap-4 justify-left items-center mb-8'
 
   const links = [
-    { 'label': 'Register', 'url': 'https://forms.office.com/r/eXfdztgLqX', 'primary': true },
+    /*{ 'label': 'Register', 'url': 'https://forms.office.com/r/eXfdztgLqX', 'primary': true },*/
     { 'label': 'Learn more', 'url': '/about' }
   ]
 
@@ -43,7 +43,7 @@ const Hero_3 = () => {
     <div className={``}>
       <motion.section
         id="home"
-        className="min-h-screen flex items-center justify-center relative px-6 pt-10"
+        className="min-h-screen flex items-center justify-center relative px-6"
       >
         <div className="absolute inset-0 overflow-hidden">
           <motion.div
@@ -131,7 +131,6 @@ const Hero_3 = () => {
                   Break it
                 </span>
                 <br />
-                {/*<span className={`${isDarkMode ? "text-white": "text-gray-900"}`}>*/}
                 <span className={`text-gray-900`}>
                   Build it better
                 </span>
@@ -154,7 +153,6 @@ const Hero_3 = () => {
             </motion.div>
           </div>
 
-          {/*Desktop View*/}
           <div className="hidden lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
             <motion.div
               initial="hidden"
@@ -210,33 +208,6 @@ const Hero_3 = () => {
               themselves, connect with like-minded peers, and grow their tech skills in a fun and engaging environment.
             </motion.p>
             <HeroLinks />
-
-            {/*
-              <motion.div
-                variants={itemsVariants}
-                className="flex gap-6 mb-8"
-              >
-                <Link to="/team" className="block m-0 p-0">
-                <motion.button
-                  whileHover={{ y: -2}}
-                  whileTap={{ scale: 0.98}}
-                  className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300"
-                >
-                  View Team
-                </motion.button>
-                </Link>
-                <Link to="/contact" className="block m-0 p-0">
-                <motion.button
-                  whileHover={{y: -2}}
-                  whileTap={{ scale: 0.98}}
-                  className={`border border-gray-300 hover:border-gray-400 text-gray-700
-                  px-8 py-4 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300`}
-                >
-                  Get in Contact
-                </motion.button>
-                </Link>
-              </motion.div>
-              */}
 
           </motion.div>
 

@@ -1,0 +1,33 @@
+{
+  "notifications": [
+    {
+      "id": "welcome-2025-10",
+      "severity": "info",
+      "title": "Welcome to our new Code Club website with all latest updates",
+      "message": "We’ve rolled out performance improvements and bug fixes.",
+      "startAt": "2025-10-11T00:00:00Z",
+      "endAt": "2025-10-31T23:59:59Z"
+    },
+    {
+      "id": "weather-alert-2025-10-12",
+      "severity": "error",
+      "badge": "Weather warning",
+      "title": "Status Red – Heavy rain and localised flooding",
+      "message": "Take care on roads and allow extra travel time.",
+      "href": "https://www.met.ie/warnings",
+      "cta": "View full warning",
+      "target": "_blank",
+      "startAt": "2025-10-09T09:00:00Z",
+      "durationDays": 3
+    },
+    {
+      "id": "bank-holiday-alert-2025-10-13",
+      "severity": "error",
+      "badge": "Code Club Closed",
+      "title": "No classes",
+      "message": "No classes on 25th of October, and 1st of November",
+      "startAt": "2025-10-20T09:00:00Z",
+      "durationDays": 14
+    }
+  ]
+}

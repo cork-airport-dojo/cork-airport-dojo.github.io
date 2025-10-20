@@ -7,10 +7,14 @@ import Navbar from "./components/custom/Navbar/Navbar";
 import NavSideBar from "./components/custom/Navbar/NavSideBar";
 import FAQClub from "./components/custom/FAQClub/FAQClub";
 import Footer from "./components/custom/Footer/Footer";
+import Notification from "./components/custom/Notification/Notificaiton";
 import { useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import { useElementHeight} from "@/hooks/useElementHeight";
 
 const App = () => {
+
+  const navbarHeight = useElementHeight("#main-navbar");
 
   useEffect(() => {
     emailjs.init("bNwktbc4EGNVF_zWT");
@@ -21,6 +25,7 @@ const App = () => {
     <div className="">
       <Navbar />
       <NavSideBar />
+      <Notification  style={{ marginTop: navbarHeight }} />
       <main className={`min-h-screen transition-all duration-500  bg-gray-50 text-gray-900`}>
           <Routes>
             <Route path="/" element={<Home />} />

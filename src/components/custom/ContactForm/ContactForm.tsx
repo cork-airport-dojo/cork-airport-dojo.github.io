@@ -128,7 +128,7 @@ const ContactForm = () => {
           </div>
         </div>
       ):(
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 py-16">
             <div className="grid lg:grid-cols-5 gap-12">
               {/* Sidebar */}
               <div className="lg:col-span-2">

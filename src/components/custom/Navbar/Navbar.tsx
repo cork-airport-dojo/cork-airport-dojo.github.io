@@ -9,6 +9,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
+    id="main-navbar"
     style={{opacity: 1}}
     className={`fixed top-0 w-full z-50 px-6 py-4 bg-gray-50/80 backdrop-blur-md border-b border-gray-200`}
     >
