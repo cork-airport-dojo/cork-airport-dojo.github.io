@@ -188,7 +188,7 @@ export function Notifications({
                   ) : null}
                 </div>
               )}
-              <p className="text-sm md:text-[0.95rem] leading-5 md:leading-6">
+              <p className="md:text-[1.25rem] mt-4 whitespace-pre-wrap leading-5 md:leading-6">
                 {n.message}
                 {n.href ? (
                   <>
