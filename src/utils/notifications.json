@@ -28,6 +28,15 @@
       "message": "No classes on 25th of October, and 1st of November",
       "startAt": "2025-10-20T09:00:00Z",
       "durationDays": 14
+    },
+    {
+      "id": "finish-dec-2025-11-29",
+      "severity": "info",
+      "badge":"Code Club End date",
+      "title": "Classes finishing on the 6th of December",
+      "message": "We will be finishing classes on the 6th of December, and we will continue with certificates and belts given in January 2026.\n\nIf you were signed up for the most recent semester, you should receive an email with the form to sign up for next year.",
+      "startAt": "2025-11-29T09:00:00Z",
+      "durationDays": 16
     }
   ]
 }
