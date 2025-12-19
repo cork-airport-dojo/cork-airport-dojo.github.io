@@ -57,14 +57,14 @@ const OurTeam = () => {
         These IBMers give their time and energy each week to make Cork Airport Code Club happen.
       </p>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
+      <div className="flex flex-wrap justify-center items-center md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
         {TeamData.map(
           ({ imageUrl, name, position, description, socialNetworks }: TeamProps) => (
             <Card
               key={name}
-              className="bg-muted/50  relative mt-8 flex flex-col justify-center items-center"
+              className="bg-muted/50 w-[300px] h-[500px] relative mt-8 flex flex-col items-center"
             >
-              <CardHeader className="mt-8 flex justify-center items-center pb-2">
+              <CardHeader className="mt-8 flex justify-center items-center pb-6">
                 <img
                   src={imageUrl}
                   alt={`${name} ${position}`}
@@ -76,11 +76,11 @@ const OurTeam = () => {
                 </CardDescription>
               </CardHeader>
 
-              <CardContent className="pb-2 font-light">
+              <CardContent className="pb-2 font-light text-center">
                 {description}
               </CardContent>
 
-              <CardFooter>
+              <CardFooter className="bottom-0 absolute">
                 {socialNetworks.map(({ name, url }: SociaNetworkslProps) => (
                   <div key={name}>
                     <a
