@@ -27,19 +27,19 @@ export const RedHatBuildingAddressLabel = (props: {block: boolean | undefined} |
 }
 
 export const COURSES_CATEGORY = [
-  {
-    title: "AI Agent Fundamentals & Development",
-    id: 1,
-    description: "Unlock the power of AI Agents! This program\n" +
-      "introduces you to the core concepts of AI Agents and provides hands-on\n" +
-      "experience applying them within real-world development environments. Learn\n" +
-      "how to build and integrate agents to automate tasks and solve complex\n" +
-      "problems.",
-    img: ai_agents,
-    tags: ["Beginner", "Python", "Entry-level"],
-    demoURL: "#",
-    githubUrl: "#"
-  },
+  // {
+  //   title: "AI Agent Fundamentals & Development",
+  //   id: 1,
+  //   description: "Unlock the power of AI Agents! This program\n" +
+  //     "introduces you to the core concepts of AI Agents and provides hands-on\n" +
+  //     "experience applying them within real-world development environments. Learn\n" +
+  //     "how to build and integrate agents to automate tasks and solve complex\n" +
+  //     "problems.",
+  //   img: ai_agents,
+  //   tags: ["Beginner", "Python", "Entry-level"],
+  //   demoURL: "#",
+  //   githubUrl: "#"
+  // },
   {
     title: "AI Project Forge",
     id: 2,
@@ -109,7 +109,7 @@ export const TeamData = [
     imageUrl: Conor,
     name: "Conor Shipsey",
     position: "Software Developer",
-    description: "Conor Shipsey is a software developer at IBM, Conor graduate with a BSc in Computer Science from UCC, with strong experience in Python, web development, and artificial intelligence. Conor has previously mentored kids through coaching sports teams and is excited to bring this experience to Code Club. This is Conor’s first semester with the code club.",
+    description: "Conor Shipsey is a software developer at IBM, Conor graduate with a BSc in Computer Science from UCC, with strong experience in Python, web development, and artificial intelligence. Conor has previously mentored kids through coaching sports teams and is excited to bring this experience to Code Club.",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -121,7 +121,7 @@ export const TeamData = [
     imageUrl: Riti,
     name: "Riti Chakraborty",
     position: "Software Developer",
-    description: "DevOps Engineer with an M.Sc. in Computer Science, skilled in automation, infrastructure, and CI/CD pipelines. Passionate about building scalable, secure systems and delivering efficient, automated workflows.  This is Riti's first semester with the code club.",
+    description: "DevOps Engineer with an M.Sc. in Computer Science, skilled in automation, infrastructure, and CI/CD pipelines. Passionate about building scalable, secure systems and delivering efficient, automated workflows.",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -160,17 +160,17 @@ export const TeamData = [
     ],
   },
 
-  {
-    imageUrl: Yaya,
-    name: "Yaya Sivakumar",
-    position: "Software Developer",
-    description: "Yaya is a graduate software developer for IBM with a BSc in Computer Science. Her final year project specialised in researching GANs for the purpose of white light virtual blood smear staining. She has previous mentoring experience as a lab assistant in UCC and this is her first year in the Code Club team.",
-    socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/yachitra-sivakumar-a897491a2/",
-      },
-    ],
-  },
+  // {
+  //   imageUrl: Yaya,
+  //   name: "Yaya Sivakumar",
+  //   position: "Software Developer",
+  //   description: "Yaya is a graduate software developer for IBM with a BSc in Computer Science. Her final year project specialised in researching GANs for the purpose of white light virtual blood smear staining. She has previous mentoring experience as a lab assistant in UCC and this is her first year in the Code Club team.",
+  //   socialNetworks: [
+  //     {
+  //       name: "Linkedin",
+  //       url: "https://www.linkedin.com/in/yachitra-sivakumar-a897491a2/",
+  //     },
+  //   ],
+  // },
 
 ]

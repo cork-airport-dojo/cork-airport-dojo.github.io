@@ -9,7 +9,7 @@ const HeroLinks = (): React.ReactNode => {
   const container_class = 'flex flex-col sm:flex-row gap-4 justify-left items-center mb-8'
 
   const links = [
-    /*{ 'label': 'Register', 'url': 'https://forms.office.com/r/eXfdztgLqX', 'primary': true },*/
+    { 'label': 'Register', 'url': 'https://forms.office.com/r/m4tEZMwXZ4', 'primary': true },
     { 'label': 'Learn more', 'url': '/about', 'primary': false }
   ]
 
