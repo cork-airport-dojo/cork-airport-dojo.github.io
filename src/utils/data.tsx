@@ -4,13 +4,11 @@ import Aishling from "@assets/team/Aishling.png";
 import Thomas from "@assets/team/Thomas.png";
 import Riti from "@assets/team/Riti.png";
 import Conor from "@assets/team/Conor.png";
-import Yaya from "@assets/team/Yaya.png";
 import Sami from "@assets/team/Sami.png"
 
 import forge from "@assets/courses/forge.png";
 import beginner_python from "@assets/courses/beginner_python.png";
 import python from "@assets/courses/python_artwork.png";
-import ai_agents from "@assets/courses/ai_agents.png";
 
 export const RedHatBuildingAddressLabel = (props: {block: boolean | undefined} | undefined): React.ReactNode => {
   const address_text = ['IBM, Building 6700', ' Avenue 6000', 'Lehenagh More', 'T12XR60']
