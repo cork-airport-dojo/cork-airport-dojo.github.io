@@ -109,7 +109,7 @@ export const TeamData = [
     imageUrl: Conor,
     name: "Conor Shipsey",
     position: "Software Developer",
-    description: "Conor Shipsey is a software developer at IBM, Conor graduate with a BSc in Computer Science from UCC, with strong experience in Python, web development, and artificial intelligence. Conor has previously mentored kids through coaching sports teams and is excited to bring this experience to Code Club. This is Conor’s first semester with the code club.",
+    description: "Conor Shipsey is a software developer at IBM, Conor graduate with a BSc in Computer Science from UCC, with strong experience in Python, web development, and artificial intelligence. Conor has previously mentored kids through coaching sports teams and is excited to bring this experience to Code Club.",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -121,7 +121,7 @@ export const TeamData = [
     imageUrl: Riti,
     name: "Riti Chakraborty",
     position: "Software Developer",
-    description: "DevOps Engineer with an M.Sc. in Computer Science, skilled in automation, infrastructure, and CI/CD pipelines. Passionate about building scalable, secure systems and delivering efficient, automated workflows.  This is Riti's first semester with the code club.",
+    description: "DevOps Engineer with an M.Sc. in Computer Science, skilled in automation, infrastructure, and CI/CD pipelines. Passionate about building scalable, secure systems and delivering efficient, automated workflows.",
     socialNetworks: [
       {
         name: "Linkedin",

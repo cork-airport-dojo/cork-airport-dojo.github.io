@@ -62,7 +62,7 @@ const OurTeam = () => {
           ({ imageUrl, name, position, description, socialNetworks }: TeamProps) => (
             <Card
               key={name}
-              className="bg-muted/50 w-[300px] h-[500px] relative mt-8 flex flex-col items-center"
+              className="bg-muted/50 w-[300px] h-[480px] relative mt-8 flex flex-col items-center"
             >
               <CardHeader className="mt-8 flex justify-center items-center pb-6">
                 <img
