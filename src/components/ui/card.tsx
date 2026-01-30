@@ -32,7 +32,7 @@ function Card({ className, ref, ...props }: CardProps) {
     <div
       ref={ref}
       className={cn(
-        "rounded-lg  bg-card text-card-foreground shadow-xl/30",
+        "rounded-lg bg-card text-card-foreground shadow-xl/30",
         className
       )}
       {...props}
