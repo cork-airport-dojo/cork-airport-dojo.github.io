@@ -37,6 +37,15 @@
       "message": "We will be finishing classes on the 6th of December, and we will continue with certificates and belts given in January 2026.\n\nIf you were signed up for the most recent semester, you should receive an email with the form to sign up for next year.",
       "startAt": "2025-11-29T09:00:00Z",
       "durationDays": 16
+    },
+    {
+      "id": "bank-holiday-alert-2026-01-31",
+      "severity": "info",
+      "badge":"Code Club Closed",
+      "title": "No classes",
+      "message": "Reminder that there are no classes on Saturday 31st of January, as it is a bank holiday weekend",
+      "startAt": "2026-01-30T08:00:00Z",
+      "durationDays": 3
     }
   ]
 }
