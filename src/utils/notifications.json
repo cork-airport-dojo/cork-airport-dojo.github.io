@@ -46,6 +46,15 @@
       "message": "Reminder that there are no classes on Saturday 31st of January, as it is a bank holiday weekend",
       "startAt": "2026-01-30T08:00:00Z",
       "durationDays": 3
+    },
+    {
+      "id": "mid-term-2026-02-14",
+      "severity": "info",
+      "badge":"Code Club Closed",
+      "title": "No classes",
+      "message": "No classes this weekend, we're back on the 28th of February.",
+      "startAt": "2026-02-14T08:00:00Z",
+      "durationDays": 14
     }
   ]
 }
