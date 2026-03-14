@@ -55,6 +55,13 @@
       "message": "No classes this weekend, we're back on the 28th of February.",
       "startAt": "2026-02-14T08:00:00Z",
       "durationDays": 14
+    },
+    {
+      "id": "easter-holidays-2026-03-14",
+      "severity": "info",
+      "badge":"Code Club Closed",
+      "title": "Code Club Easter break until Saturday, 18/04/26",
+      "message": "As there are upcoming bank holidays and school holidays over the easter period, Code Club will take a break from 21/03/26, returning back on 18/04/26."
     }
   ]
 }
