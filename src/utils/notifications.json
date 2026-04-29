@@ -61,7 +61,18 @@
       "severity": "info",
       "badge":"Code Club Closed",
       "title": "Code Club Easter break until Saturday, 18/04/26",
-      "message": "As there are upcoming bank holidays and school holidays over the easter period, Code Club will take a break from 21/03/26, returning back on 18/04/26."
+      "message": "As there are upcoming bank holidays and school holidays over the easter period, Code Club will take a break from 21/03/26, returning back on 18/04/26.",
+      "startAt": "2026-03-14",
+      "durationDays": 14
+    },
+    {
+      "id": "may-day-bank-holiday-2026-04-25",
+      "severity": "info",
+      "badge": "Code Club Closed",
+      "title": "Code Club will not be running on Saturday, the 2nd of May",
+      "message": "Due to the May Day bank holiday weekend, Code Club will not take place this weekend.",
+      "startAt": "2026-04-25:00:00:00Z",
+      "durationDays": 9
     }
   ]
 }
