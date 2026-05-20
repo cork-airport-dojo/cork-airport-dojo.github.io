@@ -71,8 +71,16 @@
       "badge": "Code Club Closed",
       "title": "Code Club will not be running on Saturday, the 2nd of May",
       "message": "Due to the May Day bank holiday weekend, Code Club will not take place this weekend.",
-      "startAt": "2026-04-25:00:00:00Z",
+      "startAt": "2026-04-25",
       "durationDays": 9
+    },
+    {
+      "id": "end-of-classes-23rd-may",
+      "severify": "info",
+      "badge": "Code Club finished for Summer",
+      "title": "Code Club will be returning in a few months' time.",
+      "message": "We will return after the Summer holidays with some new classes and updates.\n\nIf you haven't done so already, please register for next term below :)",
+      "startAt": "2026-04-19"
     }
   ]
 }
